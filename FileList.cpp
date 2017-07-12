@@ -61,7 +61,7 @@ using namespace RakNet;
 #include <unistd.h>
 #include <stdlib.h>
 #include <sys/stat.h>
-#include "_FindFirst.h"
+#include "FindFirst.h"
 #include <stdint.h> //defines intptr_t
 #endif
 
