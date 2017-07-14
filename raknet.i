@@ -1,4 +1,4 @@
-%module raknetlib
+%module raknet
 
 %{
 #include "RakPeerInterface.h"
@@ -17,12 +17,12 @@ unsigned char GetPacketIdentifier(RakNet::Packet *p)
         return (unsigned char) p->data[0];
 }
 
-unsigned char *GetPacketPayload(RakNet::Packet *p)
+char *GetPacketPayload(RakNet::Packet *p)
 {
     if ((unsigned char)p->data[0] == ID_TIMESTAMP)
-        return p->data + sizeof(RakNet::MessageID) + sizeof(RakNet::Time) + 1;
+        return (char *)p->data + sizeof(RakNet::MessageID) + sizeof(RakNet::Time) + 1;
     else
-        return p->data + 1;
+        return (char *)p->data + 1;
 }
 %}
 
@@ -30,8 +30,18 @@ unsigned char *GetPacketPayload(RakNet::Packet *p)
 %include "MessageIdentifiers.h"
 %include "PacketPriority.h"
 
+%rename(Copy) RakNet::SystemAddress::operator =;
+%rename(Equals) RakNet::SystemAddress::operator ==;
+%rename(NotEquals) RakNet::SystemAddress::operator !=;
+%rename(GreaterThan) RakNet::SystemAddress::operator >;
+%rename(LessThan) RakNet::SystemAddress::operator <;
+
 namespace RakNet
 {
+
+typedef unsigned short SystemIndex;
+struct Packet;
+
 enum StartupResult
 {
 	RAKNET_STARTED,
@@ -72,15 +82,115 @@ struct SocketDescriptor
 
 struct AddressOrGUID
 {
+	AddressOrGUID( Packet *packet );
 };
 
 struct RakNetGUID
 {
+	SystemIndex systemIndex;
 };
+
+struct SystemAddress
+{
+	/// Constructors
+	SystemAddress();
+	SystemAddress(const char *str);
+	SystemAddress(const char *str, unsigned short port);
+
+	/// This is not used internally, but holds a copy of the port held in the address union, so for debugging it's easier to check what port is being held
+	unsigned short debugPort;
+
+	/// \internal Return the size to write to a bitStream
+	static int size(void);
+
+	/// Hash the system address
+	static unsigned long ToInteger( const SystemAddress &sa );
+
+	/// Return the IP version, either IPV4 or IPV6
+	/// \return Either 4 or 6
+	unsigned char GetIPVersion(void) const;
+
+	/// \internal Returns either IPPROTO_IP or IPPROTO_IPV6
+	/// \sa GetIPVersion
+	unsigned int GetIPPROTO(void) const;
+
+	/// Call SetToLoopback(), with whatever IP version is currently held. Defaults to IPV4
+	void SetToLoopback(void);
+
+	/// Call SetToLoopback() with a specific IP version
+	/// \param[in] ipVersion Either 4 for IPV4 or 6 for IPV6
+	void SetToLoopback(unsigned char ipVersion);
+
+	/// \return If was set to 127.0.0.1 or ::1
+	bool IsLoopback(void) const;
+
+	// Return the systemAddress as a string in the format <IP>|<Port>
+	// Returns a static string
+	// NOT THREADSAFE
+	// portDelineator should not be '.', ':', '%', '-', '/', a number, or a-f
+	const char *ToString(bool writePort=true, char portDelineator='|') const;
+
+	// Return the systemAddress as a string in the format <IP>|<Port>
+	// dest must be large enough to hold the output
+	// portDelineator should not be '.', ':', '%', '-', '/', a number, or a-f
+	// THREADSAFE
+	void ToString(bool writePort, char *dest, char portDelineator='|') const;
+
+	/// Set the system address from a printable IP string, for example "192.0.2.1" or "2001:db8:63b3:1::3490"
+	/// You can write the port as well, using the portDelineator, for example "192.0.2.1|1234"
+	/// \param[in] str A printable IP string, for example "192.0.2.1" or "2001:db8:63b3:1::3490". Pass 0 for \a str to set to UNASSIGNED_SYSTEM_ADDRESS
+	/// \param[in] portDelineator if \a str contains a port, delineate the port with this character. portDelineator should not be '.', ':', '%', '-', '/', a number, or a-f
+	/// \param[in] ipVersion Only used if str is a pre-defined address in the wrong format, such as 127.0.0.1 but you want ip version 6, so you can pass 6 here to do the conversion
+	/// \note The current port is unchanged if a port is not specified in \a str
+	/// \return True on success, false on ipVersion does not match type of passed string
+	bool FromString(const char *str, char portDelineator='|', int ipVersion=0);
+
+	/// Same as FromString(), but you explicitly set a port at the same time
+	bool FromStringExplicitPort(const char *str, unsigned short port, int ipVersion=0);
+
+	/// Copy the port from another SystemAddress structure
+	void CopyPort( const SystemAddress& right );
+
+	/// Returns if two system addresses have the same IP (port is not checked)
+	bool EqualsExcludingPort( const SystemAddress& right ) const;
+
+	/// Returns the port in host order (this is what you normally use)
+	unsigned short GetPort(void) const;
+
+	/// \internal Returns the port in network order
+	unsigned short GetPortNetworkOrder(void) const;
+
+	/// Sets the port. The port value should be in host order (this is what you normally use)
+	/// Renamed from SetPort because of winspool.h http://edn.embarcadero.com/article/21494
+	void SetPortHostOrder(unsigned short s);
+
+	/// \internal Sets the port. The port value should already be in network order.
+	void SetPortNetworkOrder(unsigned short s);
+
+	/// Old version, for crap platforms that don't support newer socket functions
+	bool SetBinaryAddress(const char *str, char portDelineator=':');
+	/// Old version, for crap platforms that don't support newer socket functions
+	void ToString_Old(bool writePort, char *dest, char portDelineator=':') const;
+
+	/// \internal sockaddr_in6 requires extra data beyond just the IP and port. Copy that extra data from an existing SystemAddress that already has it
+	void FixForIPVersion(const SystemAddress &boundAddressToSocket);
+
+	bool IsLANAddress(void);
+
+	SystemAddress& operator = ( const SystemAddress& input );
+	bool operator==( const SystemAddress& right ) const;
+	bool operator!=( const SystemAddress& right ) const;
+	bool operator > ( const SystemAddress& right ) const;
+	bool operator < ( const SystemAddress& right ) const;
+
+	/// \internal Used internally for fast lookup. Optional (use -1 to do regular lookup). Don't transmit this.
+	SystemIndex systemIndex;
+};
+
 
 struct Packet
 {
-	// SystemAddress systemAddress;
+	SystemAddress systemAddress;
 
 	RakNetGUID guid;
 
@@ -169,4 +279,3 @@ public:
 };
 
 } // namespace RakNet
-
