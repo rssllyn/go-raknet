@@ -1,4 +1,4 @@
-%module raknet
+%module wrapper
 
 %{
 #include "RakPeerInterface.h"

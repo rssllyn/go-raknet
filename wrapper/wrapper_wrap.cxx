@@ -8,9 +8,9 @@
  * interface file instead.
  * ----------------------------------------------------------------------------- */
 
-// source: raknet.i
+// source: wrapper.i
 
-#define SWIGMODULE raknet
+#define SWIGMODULE wrapper
 
 #ifdef __cplusplus
 /* SwigValueWrapper is described in swig.swg */
@@ -263,7 +263,7 @@ char *GetPacketPayload(RakNet::Packet *p)
 extern "C" {
 #endif
 
-void _wrap_Swig_free_raknet_65a66565305db59b(void *_swig_go_0) {
+void _wrap_Swig_free_wrapper_e0979a90da1444b2(void *_swig_go_0) {
   void *arg1 = (void *) 0 ;
   
   arg1 = *(void **)&_swig_go_0; 
@@ -273,7 +273,7 @@ void _wrap_Swig_free_raknet_65a66565305db59b(void *_swig_go_0) {
 }
 
 
-char _wrap_GetPacketIdentifier_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0) {
+char _wrap_GetPacketIdentifier_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   unsigned char result;
   char _swig_go_result;
@@ -286,7 +286,7 @@ char _wrap_GetPacketIdentifier_raknet_65a66565305db59b(RakNet::Packet *_swig_go_
 }
 
 
-_gostring_ _wrap_GetPacketPayload_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0) {
+_gostring_ _wrap_GetPacketPayload_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   char *result = 0 ;
   _gostring_ _swig_go_result;
@@ -299,7 +299,7 @@ _gostring_ _wrap_GetPacketPayload_raknet_65a66565305db59b(RakNet::Packet *_swig_
 }
 
 
-intgo _wrap_ID_NAT_ESTABLISH_UNIDIRECTIONAL_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_ESTABLISH_UNIDIRECTIONAL_wrapper_e0979a90da1444b2() {
   OutOfBandIdentifiers result;
   intgo _swig_go_result;
   
@@ -311,7 +311,7 @@ intgo _wrap_ID_NAT_ESTABLISH_UNIDIRECTIONAL_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_ESTABLISH_BIDIRECTIONAL_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_ESTABLISH_BIDIRECTIONAL_wrapper_e0979a90da1444b2() {
   OutOfBandIdentifiers result;
   intgo _swig_go_result;
   
@@ -323,7 +323,7 @@ intgo _wrap_ID_NAT_ESTABLISH_BIDIRECTIONAL_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_TYPE_DETECT_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_TYPE_DETECT_wrapper_e0979a90da1444b2() {
   OutOfBandIdentifiers result;
   intgo _swig_go_result;
   
@@ -335,7 +335,7 @@ intgo _wrap_ID_NAT_TYPE_DETECT_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_ROUTER_2_REPLY_TO_SENDER_PORT_raknet_65a66565305db59b() {
+intgo _wrap_ID_ROUTER_2_REPLY_TO_SENDER_PORT_wrapper_e0979a90da1444b2() {
   OutOfBandIdentifiers result;
   intgo _swig_go_result;
   
@@ -347,7 +347,7 @@ intgo _wrap_ID_ROUTER_2_REPLY_TO_SENDER_PORT_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_ROUTER_2_REPLY_TO_SPECIFIED_PORT_raknet_65a66565305db59b() {
+intgo _wrap_ID_ROUTER_2_REPLY_TO_SPECIFIED_PORT_wrapper_e0979a90da1444b2() {
   OutOfBandIdentifiers result;
   intgo _swig_go_result;
   
@@ -359,7 +359,7 @@ intgo _wrap_ID_ROUTER_2_REPLY_TO_SPECIFIED_PORT_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_ROUTER_2_MINI_PUNCH_REPLY_raknet_65a66565305db59b() {
+intgo _wrap_ID_ROUTER_2_MINI_PUNCH_REPLY_wrapper_e0979a90da1444b2() {
   OutOfBandIdentifiers result;
   intgo _swig_go_result;
   
@@ -371,7 +371,7 @@ intgo _wrap_ID_ROUTER_2_MINI_PUNCH_REPLY_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_ROUTER_2_MINI_PUNCH_REPLY_BOUNCE_raknet_65a66565305db59b() {
+intgo _wrap_ID_ROUTER_2_MINI_PUNCH_REPLY_BOUNCE_wrapper_e0979a90da1444b2() {
   OutOfBandIdentifiers result;
   intgo _swig_go_result;
   
@@ -383,7 +383,7 @@ intgo _wrap_ID_ROUTER_2_MINI_PUNCH_REPLY_BOUNCE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_XBOX_360_VOICE_raknet_65a66565305db59b() {
+intgo _wrap_ID_XBOX_360_VOICE_wrapper_e0979a90da1444b2() {
   OutOfBandIdentifiers result;
   intgo _swig_go_result;
   
@@ -395,7 +395,7 @@ intgo _wrap_ID_XBOX_360_VOICE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_XBOX_360_GET_NETWORK_ROOM_raknet_65a66565305db59b() {
+intgo _wrap_ID_XBOX_360_GET_NETWORK_ROOM_wrapper_e0979a90da1444b2() {
   OutOfBandIdentifiers result;
   intgo _swig_go_result;
   
@@ -407,7 +407,7 @@ intgo _wrap_ID_XBOX_360_GET_NETWORK_ROOM_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_XBOX_360_RETURN_NETWORK_ROOM_raknet_65a66565305db59b() {
+intgo _wrap_ID_XBOX_360_RETURN_NETWORK_ROOM_wrapper_e0979a90da1444b2() {
   OutOfBandIdentifiers result;
   intgo _swig_go_result;
   
@@ -419,7 +419,7 @@ intgo _wrap_ID_XBOX_360_RETURN_NETWORK_ROOM_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_PING_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_PING_wrapper_e0979a90da1444b2() {
   OutOfBandIdentifiers result;
   intgo _swig_go_result;
   
@@ -431,7 +431,7 @@ intgo _wrap_ID_NAT_PING_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_PONG_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_PONG_wrapper_e0979a90da1444b2() {
   OutOfBandIdentifiers result;
   intgo _swig_go_result;
   
@@ -443,7 +443,7 @@ intgo _wrap_ID_NAT_PONG_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CONNECTED_PING_raknet_65a66565305db59b() {
+intgo _wrap_ID_CONNECTED_PING_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -455,7 +455,7 @@ intgo _wrap_ID_CONNECTED_PING_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_UNCONNECTED_PING_raknet_65a66565305db59b() {
+intgo _wrap_ID_UNCONNECTED_PING_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -467,7 +467,7 @@ intgo _wrap_ID_UNCONNECTED_PING_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_UNCONNECTED_PING_OPEN_CONNECTIONS_raknet_65a66565305db59b() {
+intgo _wrap_ID_UNCONNECTED_PING_OPEN_CONNECTIONS_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -479,7 +479,7 @@ intgo _wrap_ID_UNCONNECTED_PING_OPEN_CONNECTIONS_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CONNECTED_PONG_raknet_65a66565305db59b() {
+intgo _wrap_ID_CONNECTED_PONG_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -491,7 +491,7 @@ intgo _wrap_ID_CONNECTED_PONG_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_DETECT_LOST_CONNECTIONS_raknet_65a66565305db59b() {
+intgo _wrap_ID_DETECT_LOST_CONNECTIONS_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -503,7 +503,7 @@ intgo _wrap_ID_DETECT_LOST_CONNECTIONS_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_OPEN_CONNECTION_REQUEST_1_raknet_65a66565305db59b() {
+intgo _wrap_ID_OPEN_CONNECTION_REQUEST_1_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -515,7 +515,7 @@ intgo _wrap_ID_OPEN_CONNECTION_REQUEST_1_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_OPEN_CONNECTION_REPLY_1_raknet_65a66565305db59b() {
+intgo _wrap_ID_OPEN_CONNECTION_REPLY_1_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -527,7 +527,7 @@ intgo _wrap_ID_OPEN_CONNECTION_REPLY_1_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_OPEN_CONNECTION_REQUEST_2_raknet_65a66565305db59b() {
+intgo _wrap_ID_OPEN_CONNECTION_REQUEST_2_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -539,7 +539,7 @@ intgo _wrap_ID_OPEN_CONNECTION_REQUEST_2_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_OPEN_CONNECTION_REPLY_2_raknet_65a66565305db59b() {
+intgo _wrap_ID_OPEN_CONNECTION_REPLY_2_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -551,7 +551,7 @@ intgo _wrap_ID_OPEN_CONNECTION_REPLY_2_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CONNECTION_REQUEST_raknet_65a66565305db59b() {
+intgo _wrap_ID_CONNECTION_REQUEST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -563,7 +563,7 @@ intgo _wrap_ID_CONNECTION_REQUEST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_REMOTE_SYSTEM_REQUIRES_PUBLIC_KEY_raknet_65a66565305db59b() {
+intgo _wrap_ID_REMOTE_SYSTEM_REQUIRES_PUBLIC_KEY_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -575,7 +575,7 @@ intgo _wrap_ID_REMOTE_SYSTEM_REQUIRES_PUBLIC_KEY_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_OUR_SYSTEM_REQUIRES_SECURITY_raknet_65a66565305db59b() {
+intgo _wrap_ID_OUR_SYSTEM_REQUIRES_SECURITY_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -587,7 +587,7 @@ intgo _wrap_ID_OUR_SYSTEM_REQUIRES_SECURITY_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_PUBLIC_KEY_MISMATCH_raknet_65a66565305db59b() {
+intgo _wrap_ID_PUBLIC_KEY_MISMATCH_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -599,7 +599,7 @@ intgo _wrap_ID_PUBLIC_KEY_MISMATCH_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_OUT_OF_BAND_INTERNAL_raknet_65a66565305db59b() {
+intgo _wrap_ID_OUT_OF_BAND_INTERNAL_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -611,7 +611,7 @@ intgo _wrap_ID_OUT_OF_BAND_INTERNAL_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_SND_RECEIPT_ACKED_raknet_65a66565305db59b() {
+intgo _wrap_ID_SND_RECEIPT_ACKED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -623,7 +623,7 @@ intgo _wrap_ID_SND_RECEIPT_ACKED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_SND_RECEIPT_LOSS_raknet_65a66565305db59b() {
+intgo _wrap_ID_SND_RECEIPT_LOSS_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -635,7 +635,7 @@ intgo _wrap_ID_SND_RECEIPT_LOSS_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CONNECTION_REQUEST_ACCEPTED_raknet_65a66565305db59b() {
+intgo _wrap_ID_CONNECTION_REQUEST_ACCEPTED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -647,7 +647,7 @@ intgo _wrap_ID_CONNECTION_REQUEST_ACCEPTED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CONNECTION_ATTEMPT_FAILED_raknet_65a66565305db59b() {
+intgo _wrap_ID_CONNECTION_ATTEMPT_FAILED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -659,7 +659,7 @@ intgo _wrap_ID_CONNECTION_ATTEMPT_FAILED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_ALREADY_CONNECTED_raknet_65a66565305db59b() {
+intgo _wrap_ID_ALREADY_CONNECTED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -671,7 +671,7 @@ intgo _wrap_ID_ALREADY_CONNECTED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NEW_INCOMING_CONNECTION_raknet_65a66565305db59b() {
+intgo _wrap_ID_NEW_INCOMING_CONNECTION_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -683,7 +683,7 @@ intgo _wrap_ID_NEW_INCOMING_CONNECTION_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NO_FREE_INCOMING_CONNECTIONS_raknet_65a66565305db59b() {
+intgo _wrap_ID_NO_FREE_INCOMING_CONNECTIONS_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -695,7 +695,7 @@ intgo _wrap_ID_NO_FREE_INCOMING_CONNECTIONS_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_DISCONNECTION_NOTIFICATION_raknet_65a66565305db59b() {
+intgo _wrap_ID_DISCONNECTION_NOTIFICATION_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -707,7 +707,7 @@ intgo _wrap_ID_DISCONNECTION_NOTIFICATION_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CONNECTION_LOST_raknet_65a66565305db59b() {
+intgo _wrap_ID_CONNECTION_LOST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -719,7 +719,7 @@ intgo _wrap_ID_CONNECTION_LOST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CONNECTION_BANNED_raknet_65a66565305db59b() {
+intgo _wrap_ID_CONNECTION_BANNED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -731,7 +731,7 @@ intgo _wrap_ID_CONNECTION_BANNED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_INVALID_PASSWORD_raknet_65a66565305db59b() {
+intgo _wrap_ID_INVALID_PASSWORD_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -743,7 +743,7 @@ intgo _wrap_ID_INVALID_PASSWORD_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_INCOMPATIBLE_PROTOCOL_VERSION_raknet_65a66565305db59b() {
+intgo _wrap_ID_INCOMPATIBLE_PROTOCOL_VERSION_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -755,7 +755,7 @@ intgo _wrap_ID_INCOMPATIBLE_PROTOCOL_VERSION_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_IP_RECENTLY_CONNECTED_raknet_65a66565305db59b() {
+intgo _wrap_ID_IP_RECENTLY_CONNECTED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -767,7 +767,7 @@ intgo _wrap_ID_IP_RECENTLY_CONNECTED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_TIMESTAMP_raknet_65a66565305db59b() {
+intgo _wrap_ID_TIMESTAMP_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -779,7 +779,7 @@ intgo _wrap_ID_TIMESTAMP_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_UNCONNECTED_PONG_raknet_65a66565305db59b() {
+intgo _wrap_ID_UNCONNECTED_PONG_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -791,7 +791,7 @@ intgo _wrap_ID_UNCONNECTED_PONG_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_ADVERTISE_SYSTEM_raknet_65a66565305db59b() {
+intgo _wrap_ID_ADVERTISE_SYSTEM_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -803,7 +803,7 @@ intgo _wrap_ID_ADVERTISE_SYSTEM_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_DOWNLOAD_PROGRESS_raknet_65a66565305db59b() {
+intgo _wrap_ID_DOWNLOAD_PROGRESS_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -815,7 +815,7 @@ intgo _wrap_ID_DOWNLOAD_PROGRESS_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_REMOTE_DISCONNECTION_NOTIFICATION_raknet_65a66565305db59b() {
+intgo _wrap_ID_REMOTE_DISCONNECTION_NOTIFICATION_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -827,7 +827,7 @@ intgo _wrap_ID_REMOTE_DISCONNECTION_NOTIFICATION_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_REMOTE_CONNECTION_LOST_raknet_65a66565305db59b() {
+intgo _wrap_ID_REMOTE_CONNECTION_LOST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -839,7 +839,7 @@ intgo _wrap_ID_REMOTE_CONNECTION_LOST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_REMOTE_NEW_INCOMING_CONNECTION_raknet_65a66565305db59b() {
+intgo _wrap_ID_REMOTE_NEW_INCOMING_CONNECTION_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -851,7 +851,7 @@ intgo _wrap_ID_REMOTE_NEW_INCOMING_CONNECTION_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FILE_LIST_TRANSFER_HEADER_raknet_65a66565305db59b() {
+intgo _wrap_ID_FILE_LIST_TRANSFER_HEADER_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -863,7 +863,7 @@ intgo _wrap_ID_FILE_LIST_TRANSFER_HEADER_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FILE_LIST_TRANSFER_FILE_raknet_65a66565305db59b() {
+intgo _wrap_ID_FILE_LIST_TRANSFER_FILE_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -875,7 +875,7 @@ intgo _wrap_ID_FILE_LIST_TRANSFER_FILE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FILE_LIST_REFERENCE_PUSH_ACK_raknet_65a66565305db59b() {
+intgo _wrap_ID_FILE_LIST_REFERENCE_PUSH_ACK_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -887,7 +887,7 @@ intgo _wrap_ID_FILE_LIST_REFERENCE_PUSH_ACK_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_DDT_DOWNLOAD_REQUEST_raknet_65a66565305db59b() {
+intgo _wrap_ID_DDT_DOWNLOAD_REQUEST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -899,7 +899,7 @@ intgo _wrap_ID_DDT_DOWNLOAD_REQUEST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_TRANSPORT_STRING_raknet_65a66565305db59b() {
+intgo _wrap_ID_TRANSPORT_STRING_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -911,7 +911,7 @@ intgo _wrap_ID_TRANSPORT_STRING_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_REPLICA_MANAGER_CONSTRUCTION_raknet_65a66565305db59b() {
+intgo _wrap_ID_REPLICA_MANAGER_CONSTRUCTION_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -923,7 +923,7 @@ intgo _wrap_ID_REPLICA_MANAGER_CONSTRUCTION_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_REPLICA_MANAGER_SCOPE_CHANGE_raknet_65a66565305db59b() {
+intgo _wrap_ID_REPLICA_MANAGER_SCOPE_CHANGE_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -935,7 +935,7 @@ intgo _wrap_ID_REPLICA_MANAGER_SCOPE_CHANGE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_REPLICA_MANAGER_SERIALIZE_raknet_65a66565305db59b() {
+intgo _wrap_ID_REPLICA_MANAGER_SERIALIZE_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -947,7 +947,7 @@ intgo _wrap_ID_REPLICA_MANAGER_SERIALIZE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_REPLICA_MANAGER_DOWNLOAD_STARTED_raknet_65a66565305db59b() {
+intgo _wrap_ID_REPLICA_MANAGER_DOWNLOAD_STARTED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -959,7 +959,7 @@ intgo _wrap_ID_REPLICA_MANAGER_DOWNLOAD_STARTED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_REPLICA_MANAGER_DOWNLOAD_COMPLETE_raknet_65a66565305db59b() {
+intgo _wrap_ID_REPLICA_MANAGER_DOWNLOAD_COMPLETE_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -971,7 +971,7 @@ intgo _wrap_ID_REPLICA_MANAGER_DOWNLOAD_COMPLETE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RAKVOICE_OPEN_CHANNEL_REQUEST_raknet_65a66565305db59b() {
+intgo _wrap_ID_RAKVOICE_OPEN_CHANNEL_REQUEST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -983,7 +983,7 @@ intgo _wrap_ID_RAKVOICE_OPEN_CHANNEL_REQUEST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RAKVOICE_OPEN_CHANNEL_REPLY_raknet_65a66565305db59b() {
+intgo _wrap_ID_RAKVOICE_OPEN_CHANNEL_REPLY_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -995,7 +995,7 @@ intgo _wrap_ID_RAKVOICE_OPEN_CHANNEL_REPLY_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RAKVOICE_CLOSE_CHANNEL_raknet_65a66565305db59b() {
+intgo _wrap_ID_RAKVOICE_CLOSE_CHANNEL_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1007,7 +1007,7 @@ intgo _wrap_ID_RAKVOICE_CLOSE_CHANNEL_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RAKVOICE_DATA_raknet_65a66565305db59b() {
+intgo _wrap_ID_RAKVOICE_DATA_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1019,7 +1019,7 @@ intgo _wrap_ID_RAKVOICE_DATA_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_AUTOPATCHER_GET_CHANGELIST_SINCE_DATE_raknet_65a66565305db59b() {
+intgo _wrap_ID_AUTOPATCHER_GET_CHANGELIST_SINCE_DATE_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1031,7 +1031,7 @@ intgo _wrap_ID_AUTOPATCHER_GET_CHANGELIST_SINCE_DATE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_AUTOPATCHER_CREATION_LIST_raknet_65a66565305db59b() {
+intgo _wrap_ID_AUTOPATCHER_CREATION_LIST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1043,7 +1043,7 @@ intgo _wrap_ID_AUTOPATCHER_CREATION_LIST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_AUTOPATCHER_DELETION_LIST_raknet_65a66565305db59b() {
+intgo _wrap_ID_AUTOPATCHER_DELETION_LIST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1055,7 +1055,7 @@ intgo _wrap_ID_AUTOPATCHER_DELETION_LIST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_AUTOPATCHER_GET_PATCH_raknet_65a66565305db59b() {
+intgo _wrap_ID_AUTOPATCHER_GET_PATCH_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1067,7 +1067,7 @@ intgo _wrap_ID_AUTOPATCHER_GET_PATCH_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_AUTOPATCHER_PATCH_LIST_raknet_65a66565305db59b() {
+intgo _wrap_ID_AUTOPATCHER_PATCH_LIST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1079,7 +1079,7 @@ intgo _wrap_ID_AUTOPATCHER_PATCH_LIST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_AUTOPATCHER_REPOSITORY_FATAL_ERROR_raknet_65a66565305db59b() {
+intgo _wrap_ID_AUTOPATCHER_REPOSITORY_FATAL_ERROR_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1091,7 +1091,7 @@ intgo _wrap_ID_AUTOPATCHER_REPOSITORY_FATAL_ERROR_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_AUTOPATCHER_CANNOT_DOWNLOAD_ORIGINAL_UNMODIFIED_FILES_raknet_65a66565305db59b() {
+intgo _wrap_ID_AUTOPATCHER_CANNOT_DOWNLOAD_ORIGINAL_UNMODIFIED_FILES_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1103,7 +1103,7 @@ intgo _wrap_ID_AUTOPATCHER_CANNOT_DOWNLOAD_ORIGINAL_UNMODIFIED_FILES_raknet_65a6
 }
 
 
-intgo _wrap_ID_AUTOPATCHER_FINISHED_INTERNAL_raknet_65a66565305db59b() {
+intgo _wrap_ID_AUTOPATCHER_FINISHED_INTERNAL_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1115,7 +1115,7 @@ intgo _wrap_ID_AUTOPATCHER_FINISHED_INTERNAL_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_AUTOPATCHER_FINISHED_raknet_65a66565305db59b() {
+intgo _wrap_ID_AUTOPATCHER_FINISHED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1127,7 +1127,7 @@ intgo _wrap_ID_AUTOPATCHER_FINISHED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_AUTOPATCHER_RESTART_APPLICATION_raknet_65a66565305db59b() {
+intgo _wrap_ID_AUTOPATCHER_RESTART_APPLICATION_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1139,7 +1139,7 @@ intgo _wrap_ID_AUTOPATCHER_RESTART_APPLICATION_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_PUNCHTHROUGH_REQUEST_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_PUNCHTHROUGH_REQUEST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1151,7 +1151,7 @@ intgo _wrap_ID_NAT_PUNCHTHROUGH_REQUEST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_CONNECT_AT_TIME_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_CONNECT_AT_TIME_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1163,7 +1163,7 @@ intgo _wrap_ID_NAT_CONNECT_AT_TIME_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_GET_MOST_RECENT_PORT_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_GET_MOST_RECENT_PORT_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1175,7 +1175,7 @@ intgo _wrap_ID_NAT_GET_MOST_RECENT_PORT_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_CLIENT_READY_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_CLIENT_READY_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1187,7 +1187,7 @@ intgo _wrap_ID_NAT_CLIENT_READY_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_TARGET_NOT_CONNECTED_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_TARGET_NOT_CONNECTED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1199,7 +1199,7 @@ intgo _wrap_ID_NAT_TARGET_NOT_CONNECTED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_TARGET_UNRESPONSIVE_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_TARGET_UNRESPONSIVE_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1211,7 +1211,7 @@ intgo _wrap_ID_NAT_TARGET_UNRESPONSIVE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_CONNECTION_TO_TARGET_LOST_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_CONNECTION_TO_TARGET_LOST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1223,7 +1223,7 @@ intgo _wrap_ID_NAT_CONNECTION_TO_TARGET_LOST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_ALREADY_IN_PROGRESS_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_ALREADY_IN_PROGRESS_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1235,7 +1235,7 @@ intgo _wrap_ID_NAT_ALREADY_IN_PROGRESS_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_PUNCHTHROUGH_FAILED_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_PUNCHTHROUGH_FAILED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1247,7 +1247,7 @@ intgo _wrap_ID_NAT_PUNCHTHROUGH_FAILED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_PUNCHTHROUGH_SUCCEEDED_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_PUNCHTHROUGH_SUCCEEDED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1259,7 +1259,7 @@ intgo _wrap_ID_NAT_PUNCHTHROUGH_SUCCEEDED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_READY_EVENT_SET_raknet_65a66565305db59b() {
+intgo _wrap_ID_READY_EVENT_SET_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1271,7 +1271,7 @@ intgo _wrap_ID_READY_EVENT_SET_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_READY_EVENT_UNSET_raknet_65a66565305db59b() {
+intgo _wrap_ID_READY_EVENT_UNSET_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1283,7 +1283,7 @@ intgo _wrap_ID_READY_EVENT_UNSET_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_READY_EVENT_ALL_SET_raknet_65a66565305db59b() {
+intgo _wrap_ID_READY_EVENT_ALL_SET_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1295,7 +1295,7 @@ intgo _wrap_ID_READY_EVENT_ALL_SET_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_READY_EVENT_QUERY_raknet_65a66565305db59b() {
+intgo _wrap_ID_READY_EVENT_QUERY_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1307,7 +1307,7 @@ intgo _wrap_ID_READY_EVENT_QUERY_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_LOBBY_GENERAL_raknet_65a66565305db59b() {
+intgo _wrap_ID_LOBBY_GENERAL_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1319,7 +1319,7 @@ intgo _wrap_ID_LOBBY_GENERAL_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RPC_REMOTE_ERROR_raknet_65a66565305db59b() {
+intgo _wrap_ID_RPC_REMOTE_ERROR_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1331,7 +1331,7 @@ intgo _wrap_ID_RPC_REMOTE_ERROR_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RPC_PLUGIN_raknet_65a66565305db59b() {
+intgo _wrap_ID_RPC_PLUGIN_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1343,7 +1343,7 @@ intgo _wrap_ID_RPC_PLUGIN_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FILE_LIST_REFERENCE_PUSH_raknet_65a66565305db59b() {
+intgo _wrap_ID_FILE_LIST_REFERENCE_PUSH_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1355,7 +1355,7 @@ intgo _wrap_ID_FILE_LIST_REFERENCE_PUSH_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_READY_EVENT_FORCE_ALL_SET_raknet_65a66565305db59b() {
+intgo _wrap_ID_READY_EVENT_FORCE_ALL_SET_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1367,7 +1367,7 @@ intgo _wrap_ID_READY_EVENT_FORCE_ALL_SET_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_ROOMS_EXECUTE_FUNC_raknet_65a66565305db59b() {
+intgo _wrap_ID_ROOMS_EXECUTE_FUNC_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1379,7 +1379,7 @@ intgo _wrap_ID_ROOMS_EXECUTE_FUNC_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_ROOMS_LOGON_STATUS_raknet_65a66565305db59b() {
+intgo _wrap_ID_ROOMS_LOGON_STATUS_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1391,7 +1391,7 @@ intgo _wrap_ID_ROOMS_LOGON_STATUS_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_ROOMS_HANDLE_CHANGE_raknet_65a66565305db59b() {
+intgo _wrap_ID_ROOMS_HANDLE_CHANGE_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1403,7 +1403,7 @@ intgo _wrap_ID_ROOMS_HANDLE_CHANGE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_LOBBY2_SEND_MESSAGE_raknet_65a66565305db59b() {
+intgo _wrap_ID_LOBBY2_SEND_MESSAGE_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1415,7 +1415,7 @@ intgo _wrap_ID_LOBBY2_SEND_MESSAGE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_LOBBY2_SERVER_ERROR_raknet_65a66565305db59b() {
+intgo _wrap_ID_LOBBY2_SERVER_ERROR_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1427,7 +1427,7 @@ intgo _wrap_ID_LOBBY2_SERVER_ERROR_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FCM2_NEW_HOST_raknet_65a66565305db59b() {
+intgo _wrap_ID_FCM2_NEW_HOST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1439,7 +1439,7 @@ intgo _wrap_ID_FCM2_NEW_HOST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FCM2_REQUEST_FCMGUID_raknet_65a66565305db59b() {
+intgo _wrap_ID_FCM2_REQUEST_FCMGUID_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1451,7 +1451,7 @@ intgo _wrap_ID_FCM2_REQUEST_FCMGUID_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FCM2_RESPOND_CONNECTION_COUNT_raknet_65a66565305db59b() {
+intgo _wrap_ID_FCM2_RESPOND_CONNECTION_COUNT_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1463,7 +1463,7 @@ intgo _wrap_ID_FCM2_RESPOND_CONNECTION_COUNT_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FCM2_INFORM_FCMGUID_raknet_65a66565305db59b() {
+intgo _wrap_ID_FCM2_INFORM_FCMGUID_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1475,7 +1475,7 @@ intgo _wrap_ID_FCM2_INFORM_FCMGUID_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FCM2_UPDATE_MIN_TOTAL_CONNECTION_COUNT_raknet_65a66565305db59b() {
+intgo _wrap_ID_FCM2_UPDATE_MIN_TOTAL_CONNECTION_COUNT_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1487,7 +1487,7 @@ intgo _wrap_ID_FCM2_UPDATE_MIN_TOTAL_CONNECTION_COUNT_raknet_65a66565305db59b() 
 }
 
 
-intgo _wrap_ID_FCM2_VERIFIED_JOIN_START_raknet_65a66565305db59b() {
+intgo _wrap_ID_FCM2_VERIFIED_JOIN_START_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1499,7 +1499,7 @@ intgo _wrap_ID_FCM2_VERIFIED_JOIN_START_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FCM2_VERIFIED_JOIN_CAPABLE_raknet_65a66565305db59b() {
+intgo _wrap_ID_FCM2_VERIFIED_JOIN_CAPABLE_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1511,7 +1511,7 @@ intgo _wrap_ID_FCM2_VERIFIED_JOIN_CAPABLE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FCM2_VERIFIED_JOIN_FAILED_raknet_65a66565305db59b() {
+intgo _wrap_ID_FCM2_VERIFIED_JOIN_FAILED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1523,7 +1523,7 @@ intgo _wrap_ID_FCM2_VERIFIED_JOIN_FAILED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FCM2_VERIFIED_JOIN_ACCEPTED_raknet_65a66565305db59b() {
+intgo _wrap_ID_FCM2_VERIFIED_JOIN_ACCEPTED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1535,7 +1535,7 @@ intgo _wrap_ID_FCM2_VERIFIED_JOIN_ACCEPTED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FCM2_VERIFIED_JOIN_REJECTED_raknet_65a66565305db59b() {
+intgo _wrap_ID_FCM2_VERIFIED_JOIN_REJECTED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1547,7 +1547,7 @@ intgo _wrap_ID_FCM2_VERIFIED_JOIN_REJECTED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_UDP_PROXY_GENERAL_raknet_65a66565305db59b() {
+intgo _wrap_ID_UDP_PROXY_GENERAL_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1559,7 +1559,7 @@ intgo _wrap_ID_UDP_PROXY_GENERAL_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_SQLite3_EXEC_raknet_65a66565305db59b() {
+intgo _wrap_ID_SQLite3_EXEC_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1571,7 +1571,7 @@ intgo _wrap_ID_SQLite3_EXEC_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_SQLite3_UNKNOWN_DB_raknet_65a66565305db59b() {
+intgo _wrap_ID_SQLite3_UNKNOWN_DB_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1583,7 +1583,7 @@ intgo _wrap_ID_SQLite3_UNKNOWN_DB_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_SQLLITE_LOGGER_raknet_65a66565305db59b() {
+intgo _wrap_ID_SQLLITE_LOGGER_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1595,7 +1595,7 @@ intgo _wrap_ID_SQLLITE_LOGGER_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_TYPE_DETECTION_REQUEST_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_TYPE_DETECTION_REQUEST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1607,7 +1607,7 @@ intgo _wrap_ID_NAT_TYPE_DETECTION_REQUEST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_TYPE_DETECTION_RESULT_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_TYPE_DETECTION_RESULT_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1619,7 +1619,7 @@ intgo _wrap_ID_NAT_TYPE_DETECTION_RESULT_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_ROUTER_2_INTERNAL_raknet_65a66565305db59b() {
+intgo _wrap_ID_ROUTER_2_INTERNAL_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1631,7 +1631,7 @@ intgo _wrap_ID_ROUTER_2_INTERNAL_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_ROUTER_2_FORWARDING_NO_PATH_raknet_65a66565305db59b() {
+intgo _wrap_ID_ROUTER_2_FORWARDING_NO_PATH_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1643,7 +1643,7 @@ intgo _wrap_ID_ROUTER_2_FORWARDING_NO_PATH_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_ROUTER_2_FORWARDING_ESTABLISHED_raknet_65a66565305db59b() {
+intgo _wrap_ID_ROUTER_2_FORWARDING_ESTABLISHED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1655,7 +1655,7 @@ intgo _wrap_ID_ROUTER_2_FORWARDING_ESTABLISHED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_ROUTER_2_REROUTED_raknet_65a66565305db59b() {
+intgo _wrap_ID_ROUTER_2_REROUTED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1667,7 +1667,7 @@ intgo _wrap_ID_ROUTER_2_REROUTED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_TEAM_BALANCER_INTERNAL_raknet_65a66565305db59b() {
+intgo _wrap_ID_TEAM_BALANCER_INTERNAL_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1679,7 +1679,7 @@ intgo _wrap_ID_TEAM_BALANCER_INTERNAL_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_TEAM_BALANCER_REQUESTED_TEAM_FULL_raknet_65a66565305db59b() {
+intgo _wrap_ID_TEAM_BALANCER_REQUESTED_TEAM_FULL_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1691,7 +1691,7 @@ intgo _wrap_ID_TEAM_BALANCER_REQUESTED_TEAM_FULL_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_TEAM_BALANCER_REQUESTED_TEAM_LOCKED_raknet_65a66565305db59b() {
+intgo _wrap_ID_TEAM_BALANCER_REQUESTED_TEAM_LOCKED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1703,7 +1703,7 @@ intgo _wrap_ID_TEAM_BALANCER_REQUESTED_TEAM_LOCKED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_TEAM_BALANCER_TEAM_REQUESTED_CANCELLED_raknet_65a66565305db59b() {
+intgo _wrap_ID_TEAM_BALANCER_TEAM_REQUESTED_CANCELLED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1715,7 +1715,7 @@ intgo _wrap_ID_TEAM_BALANCER_TEAM_REQUESTED_CANCELLED_raknet_65a66565305db59b() 
 }
 
 
-intgo _wrap_ID_TEAM_BALANCER_TEAM_ASSIGNED_raknet_65a66565305db59b() {
+intgo _wrap_ID_TEAM_BALANCER_TEAM_ASSIGNED_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1727,7 +1727,7 @@ intgo _wrap_ID_TEAM_BALANCER_TEAM_ASSIGNED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_LIGHTSPEED_INTEGRATION_raknet_65a66565305db59b() {
+intgo _wrap_ID_LIGHTSPEED_INTEGRATION_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1739,7 +1739,7 @@ intgo _wrap_ID_LIGHTSPEED_INTEGRATION_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_XBOX_LOBBY_raknet_65a66565305db59b() {
+intgo _wrap_ID_XBOX_LOBBY_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1751,7 +1751,7 @@ intgo _wrap_ID_XBOX_LOBBY_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_TWO_WAY_AUTHENTICATION_INCOMING_CHALLENGE_SUCCESS_raknet_65a66565305db59b() {
+intgo _wrap_ID_TWO_WAY_AUTHENTICATION_INCOMING_CHALLENGE_SUCCESS_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1763,7 +1763,7 @@ intgo _wrap_ID_TWO_WAY_AUTHENTICATION_INCOMING_CHALLENGE_SUCCESS_raknet_65a66565
 }
 
 
-intgo _wrap_ID_TWO_WAY_AUTHENTICATION_OUTGOING_CHALLENGE_SUCCESS_raknet_65a66565305db59b() {
+intgo _wrap_ID_TWO_WAY_AUTHENTICATION_OUTGOING_CHALLENGE_SUCCESS_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1775,7 +1775,7 @@ intgo _wrap_ID_TWO_WAY_AUTHENTICATION_OUTGOING_CHALLENGE_SUCCESS_raknet_65a66565
 }
 
 
-intgo _wrap_ID_TWO_WAY_AUTHENTICATION_INCOMING_CHALLENGE_FAILURE_raknet_65a66565305db59b() {
+intgo _wrap_ID_TWO_WAY_AUTHENTICATION_INCOMING_CHALLENGE_FAILURE_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1787,7 +1787,7 @@ intgo _wrap_ID_TWO_WAY_AUTHENTICATION_INCOMING_CHALLENGE_FAILURE_raknet_65a66565
 }
 
 
-intgo _wrap_ID_TWO_WAY_AUTHENTICATION_OUTGOING_CHALLENGE_FAILURE_raknet_65a66565305db59b() {
+intgo _wrap_ID_TWO_WAY_AUTHENTICATION_OUTGOING_CHALLENGE_FAILURE_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1799,7 +1799,7 @@ intgo _wrap_ID_TWO_WAY_AUTHENTICATION_OUTGOING_CHALLENGE_FAILURE_raknet_65a66565
 }
 
 
-intgo _wrap_ID_TWO_WAY_AUTHENTICATION_OUTGOING_CHALLENGE_TIMEOUT_raknet_65a66565305db59b() {
+intgo _wrap_ID_TWO_WAY_AUTHENTICATION_OUTGOING_CHALLENGE_TIMEOUT_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1811,7 +1811,7 @@ intgo _wrap_ID_TWO_WAY_AUTHENTICATION_OUTGOING_CHALLENGE_TIMEOUT_raknet_65a66565
 }
 
 
-intgo _wrap_ID_TWO_WAY_AUTHENTICATION_NEGOTIATION_raknet_65a66565305db59b() {
+intgo _wrap_ID_TWO_WAY_AUTHENTICATION_NEGOTIATION_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1823,7 +1823,7 @@ intgo _wrap_ID_TWO_WAY_AUTHENTICATION_NEGOTIATION_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CLOUD_POST_REQUEST_raknet_65a66565305db59b() {
+intgo _wrap_ID_CLOUD_POST_REQUEST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1835,7 +1835,7 @@ intgo _wrap_ID_CLOUD_POST_REQUEST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CLOUD_RELEASE_REQUEST_raknet_65a66565305db59b() {
+intgo _wrap_ID_CLOUD_RELEASE_REQUEST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1847,7 +1847,7 @@ intgo _wrap_ID_CLOUD_RELEASE_REQUEST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CLOUD_GET_REQUEST_raknet_65a66565305db59b() {
+intgo _wrap_ID_CLOUD_GET_REQUEST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1859,7 +1859,7 @@ intgo _wrap_ID_CLOUD_GET_REQUEST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CLOUD_GET_RESPONSE_raknet_65a66565305db59b() {
+intgo _wrap_ID_CLOUD_GET_RESPONSE_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1871,7 +1871,7 @@ intgo _wrap_ID_CLOUD_GET_RESPONSE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CLOUD_UNSUBSCRIBE_REQUEST_raknet_65a66565305db59b() {
+intgo _wrap_ID_CLOUD_UNSUBSCRIBE_REQUEST_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1883,7 +1883,7 @@ intgo _wrap_ID_CLOUD_UNSUBSCRIBE_REQUEST_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CLOUD_SERVER_TO_SERVER_COMMAND_raknet_65a66565305db59b() {
+intgo _wrap_ID_CLOUD_SERVER_TO_SERVER_COMMAND_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1895,7 +1895,7 @@ intgo _wrap_ID_CLOUD_SERVER_TO_SERVER_COMMAND_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_CLOUD_SUBSCRIPTION_NOTIFICATION_raknet_65a66565305db59b() {
+intgo _wrap_ID_CLOUD_SUBSCRIPTION_NOTIFICATION_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1907,7 +1907,7 @@ intgo _wrap_ID_CLOUD_SUBSCRIPTION_NOTIFICATION_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_LIB_VOICE_raknet_65a66565305db59b() {
+intgo _wrap_ID_LIB_VOICE_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1919,7 +1919,7 @@ intgo _wrap_ID_LIB_VOICE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RELAY_PLUGIN_raknet_65a66565305db59b() {
+intgo _wrap_ID_RELAY_PLUGIN_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1931,7 +1931,7 @@ intgo _wrap_ID_RELAY_PLUGIN_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_REQUEST_BOUND_ADDRESSES_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_REQUEST_BOUND_ADDRESSES_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1943,7 +1943,7 @@ intgo _wrap_ID_NAT_REQUEST_BOUND_ADDRESSES_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_NAT_RESPOND_BOUND_ADDRESSES_raknet_65a66565305db59b() {
+intgo _wrap_ID_NAT_RESPOND_BOUND_ADDRESSES_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1955,7 +1955,7 @@ intgo _wrap_ID_NAT_RESPOND_BOUND_ADDRESSES_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_FCM2_UPDATE_USER_CONTEXT_raknet_65a66565305db59b() {
+intgo _wrap_ID_FCM2_UPDATE_USER_CONTEXT_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1967,7 +1967,7 @@ intgo _wrap_ID_FCM2_UPDATE_USER_CONTEXT_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RESERVED_3_raknet_65a66565305db59b() {
+intgo _wrap_ID_RESERVED_3_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1979,7 +1979,7 @@ intgo _wrap_ID_RESERVED_3_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RESERVED_4_raknet_65a66565305db59b() {
+intgo _wrap_ID_RESERVED_4_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -1991,7 +1991,7 @@ intgo _wrap_ID_RESERVED_4_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RESERVED_5_raknet_65a66565305db59b() {
+intgo _wrap_ID_RESERVED_5_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -2003,7 +2003,7 @@ intgo _wrap_ID_RESERVED_5_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RESERVED_6_raknet_65a66565305db59b() {
+intgo _wrap_ID_RESERVED_6_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -2015,7 +2015,7 @@ intgo _wrap_ID_RESERVED_6_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RESERVED_7_raknet_65a66565305db59b() {
+intgo _wrap_ID_RESERVED_7_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -2027,7 +2027,7 @@ intgo _wrap_ID_RESERVED_7_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RESERVED_8_raknet_65a66565305db59b() {
+intgo _wrap_ID_RESERVED_8_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -2039,7 +2039,7 @@ intgo _wrap_ID_RESERVED_8_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_RESERVED_9_raknet_65a66565305db59b() {
+intgo _wrap_ID_RESERVED_9_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -2051,7 +2051,7 @@ intgo _wrap_ID_RESERVED_9_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ID_USER_PACKET_ENUM_raknet_65a66565305db59b() {
+intgo _wrap_ID_USER_PACKET_ENUM_wrapper_e0979a90da1444b2() {
   DefaultMessageIDTypes result;
   intgo _swig_go_result;
   
@@ -2063,7 +2063,7 @@ intgo _wrap_ID_USER_PACKET_ENUM_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_IMMEDIATE_PRIORITY_raknet_65a66565305db59b() {
+intgo _wrap_IMMEDIATE_PRIORITY_wrapper_e0979a90da1444b2() {
   PacketPriority result;
   intgo _swig_go_result;
   
@@ -2075,7 +2075,7 @@ intgo _wrap_IMMEDIATE_PRIORITY_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_HIGH_PRIORITY_raknet_65a66565305db59b() {
+intgo _wrap_HIGH_PRIORITY_wrapper_e0979a90da1444b2() {
   PacketPriority result;
   intgo _swig_go_result;
   
@@ -2087,7 +2087,7 @@ intgo _wrap_HIGH_PRIORITY_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_MEDIUM_PRIORITY_raknet_65a66565305db59b() {
+intgo _wrap_MEDIUM_PRIORITY_wrapper_e0979a90da1444b2() {
   PacketPriority result;
   intgo _swig_go_result;
   
@@ -2099,7 +2099,7 @@ intgo _wrap_MEDIUM_PRIORITY_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_LOW_PRIORITY_raknet_65a66565305db59b() {
+intgo _wrap_LOW_PRIORITY_wrapper_e0979a90da1444b2() {
   PacketPriority result;
   intgo _swig_go_result;
   
@@ -2111,7 +2111,7 @@ intgo _wrap_LOW_PRIORITY_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_NUMBER_OF_PRIORITIES_raknet_65a66565305db59b() {
+intgo _wrap_NUMBER_OF_PRIORITIES_wrapper_e0979a90da1444b2() {
   PacketPriority result;
   intgo _swig_go_result;
   
@@ -2123,7 +2123,7 @@ intgo _wrap_NUMBER_OF_PRIORITIES_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_UNRELIABLE_raknet_65a66565305db59b() {
+intgo _wrap_UNRELIABLE_wrapper_e0979a90da1444b2() {
   PacketReliability result;
   intgo _swig_go_result;
   
@@ -2135,7 +2135,7 @@ intgo _wrap_UNRELIABLE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_UNRELIABLE_SEQUENCED_raknet_65a66565305db59b() {
+intgo _wrap_UNRELIABLE_SEQUENCED_wrapper_e0979a90da1444b2() {
   PacketReliability result;
   intgo _swig_go_result;
   
@@ -2147,7 +2147,7 @@ intgo _wrap_UNRELIABLE_SEQUENCED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_RELIABLE_raknet_65a66565305db59b() {
+intgo _wrap_RELIABLE_wrapper_e0979a90da1444b2() {
   PacketReliability result;
   intgo _swig_go_result;
   
@@ -2159,7 +2159,7 @@ intgo _wrap_RELIABLE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_RELIABLE_ORDERED_raknet_65a66565305db59b() {
+intgo _wrap_RELIABLE_ORDERED_wrapper_e0979a90da1444b2() {
   PacketReliability result;
   intgo _swig_go_result;
   
@@ -2171,7 +2171,7 @@ intgo _wrap_RELIABLE_ORDERED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_RELIABLE_SEQUENCED_raknet_65a66565305db59b() {
+intgo _wrap_RELIABLE_SEQUENCED_wrapper_e0979a90da1444b2() {
   PacketReliability result;
   intgo _swig_go_result;
   
@@ -2183,7 +2183,7 @@ intgo _wrap_RELIABLE_SEQUENCED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_UNRELIABLE_WITH_ACK_RECEIPT_raknet_65a66565305db59b() {
+intgo _wrap_UNRELIABLE_WITH_ACK_RECEIPT_wrapper_e0979a90da1444b2() {
   PacketReliability result;
   intgo _swig_go_result;
   
@@ -2195,7 +2195,7 @@ intgo _wrap_UNRELIABLE_WITH_ACK_RECEIPT_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_RELIABLE_WITH_ACK_RECEIPT_raknet_65a66565305db59b() {
+intgo _wrap_RELIABLE_WITH_ACK_RECEIPT_wrapper_e0979a90da1444b2() {
   PacketReliability result;
   intgo _swig_go_result;
   
@@ -2207,7 +2207,7 @@ intgo _wrap_RELIABLE_WITH_ACK_RECEIPT_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_RELIABLE_ORDERED_WITH_ACK_RECEIPT_raknet_65a66565305db59b() {
+intgo _wrap_RELIABLE_ORDERED_WITH_ACK_RECEIPT_wrapper_e0979a90da1444b2() {
   PacketReliability result;
   intgo _swig_go_result;
   
@@ -2219,7 +2219,7 @@ intgo _wrap_RELIABLE_ORDERED_WITH_ACK_RECEIPT_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_NUMBER_OF_RELIABILITIES_raknet_65a66565305db59b() {
+intgo _wrap_NUMBER_OF_RELIABILITIES_wrapper_e0979a90da1444b2() {
   PacketReliability result;
   intgo _swig_go_result;
   
@@ -2231,7 +2231,7 @@ intgo _wrap_NUMBER_OF_RELIABILITIES_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_RAKNET_STARTED_raknet_65a66565305db59b() {
+intgo _wrap_RAKNET_STARTED_wrapper_e0979a90da1444b2() {
   RakNet::StartupResult result;
   intgo _swig_go_result;
   
@@ -2243,7 +2243,7 @@ intgo _wrap_RAKNET_STARTED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_RAKNET_ALREADY_STARTED_raknet_65a66565305db59b() {
+intgo _wrap_RAKNET_ALREADY_STARTED_wrapper_e0979a90da1444b2() {
   RakNet::StartupResult result;
   intgo _swig_go_result;
   
@@ -2255,7 +2255,7 @@ intgo _wrap_RAKNET_ALREADY_STARTED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_INVALID_SOCKET_DESCRIPTORS_raknet_65a66565305db59b() {
+intgo _wrap_INVALID_SOCKET_DESCRIPTORS_wrapper_e0979a90da1444b2() {
   RakNet::StartupResult result;
   intgo _swig_go_result;
   
@@ -2267,7 +2267,7 @@ intgo _wrap_INVALID_SOCKET_DESCRIPTORS_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_INVALID_MAX_CONNECTIONS_raknet_65a66565305db59b() {
+intgo _wrap_INVALID_MAX_CONNECTIONS_wrapper_e0979a90da1444b2() {
   RakNet::StartupResult result;
   intgo _swig_go_result;
   
@@ -2279,7 +2279,7 @@ intgo _wrap_INVALID_MAX_CONNECTIONS_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_SOCKET_FAMILY_NOT_SUPPORTED_raknet_65a66565305db59b() {
+intgo _wrap_SOCKET_FAMILY_NOT_SUPPORTED_wrapper_e0979a90da1444b2() {
   RakNet::StartupResult result;
   intgo _swig_go_result;
   
@@ -2291,7 +2291,7 @@ intgo _wrap_SOCKET_FAMILY_NOT_SUPPORTED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_SOCKET_PORT_ALREADY_IN_USE_raknet_65a66565305db59b() {
+intgo _wrap_SOCKET_PORT_ALREADY_IN_USE_wrapper_e0979a90da1444b2() {
   RakNet::StartupResult result;
   intgo _swig_go_result;
   
@@ -2303,7 +2303,7 @@ intgo _wrap_SOCKET_PORT_ALREADY_IN_USE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_SOCKET_FAILED_TO_BIND_raknet_65a66565305db59b() {
+intgo _wrap_SOCKET_FAILED_TO_BIND_wrapper_e0979a90da1444b2() {
   RakNet::StartupResult result;
   intgo _swig_go_result;
   
@@ -2315,7 +2315,7 @@ intgo _wrap_SOCKET_FAILED_TO_BIND_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_SOCKET_FAILED_TEST_SEND_raknet_65a66565305db59b() {
+intgo _wrap_SOCKET_FAILED_TEST_SEND_wrapper_e0979a90da1444b2() {
   RakNet::StartupResult result;
   intgo _swig_go_result;
   
@@ -2327,7 +2327,7 @@ intgo _wrap_SOCKET_FAILED_TEST_SEND_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_PORT_CANNOT_BE_ZERO_raknet_65a66565305db59b() {
+intgo _wrap_PORT_CANNOT_BE_ZERO_wrapper_e0979a90da1444b2() {
   RakNet::StartupResult result;
   intgo _swig_go_result;
   
@@ -2339,7 +2339,7 @@ intgo _wrap_PORT_CANNOT_BE_ZERO_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_FAILED_TO_CREATE_NETWORK_THREAD_raknet_65a66565305db59b() {
+intgo _wrap_FAILED_TO_CREATE_NETWORK_THREAD_wrapper_e0979a90da1444b2() {
   RakNet::StartupResult result;
   intgo _swig_go_result;
   
@@ -2351,7 +2351,7 @@ intgo _wrap_FAILED_TO_CREATE_NETWORK_THREAD_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_COULD_NOT_GENERATE_GUID_raknet_65a66565305db59b() {
+intgo _wrap_COULD_NOT_GENERATE_GUID_wrapper_e0979a90da1444b2() {
   RakNet::StartupResult result;
   intgo _swig_go_result;
   
@@ -2363,7 +2363,7 @@ intgo _wrap_COULD_NOT_GENERATE_GUID_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_STARTUP_OTHER_FAILURE_raknet_65a66565305db59b() {
+intgo _wrap_STARTUP_OTHER_FAILURE_wrapper_e0979a90da1444b2() {
   RakNet::StartupResult result;
   intgo _swig_go_result;
   
@@ -2375,7 +2375,7 @@ intgo _wrap_STARTUP_OTHER_FAILURE_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_CONNECTION_ATTEMPT_STARTED_raknet_65a66565305db59b() {
+intgo _wrap_CONNECTION_ATTEMPT_STARTED_wrapper_e0979a90da1444b2() {
   RakNet::ConnectionAttemptResult result;
   intgo _swig_go_result;
   
@@ -2387,7 +2387,7 @@ intgo _wrap_CONNECTION_ATTEMPT_STARTED_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_INVALID_PARAMETER_raknet_65a66565305db59b() {
+intgo _wrap_INVALID_PARAMETER_wrapper_e0979a90da1444b2() {
   RakNet::ConnectionAttemptResult result;
   intgo _swig_go_result;
   
@@ -2399,7 +2399,7 @@ intgo _wrap_INVALID_PARAMETER_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_CANNOT_RESOLVE_DOMAIN_NAME_raknet_65a66565305db59b() {
+intgo _wrap_CANNOT_RESOLVE_DOMAIN_NAME_wrapper_e0979a90da1444b2() {
   RakNet::ConnectionAttemptResult result;
   intgo _swig_go_result;
   
@@ -2411,7 +2411,7 @@ intgo _wrap_CANNOT_RESOLVE_DOMAIN_NAME_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_ALREADY_CONNECTED_TO_ENDPOINT_raknet_65a66565305db59b() {
+intgo _wrap_ALREADY_CONNECTED_TO_ENDPOINT_wrapper_e0979a90da1444b2() {
   RakNet::ConnectionAttemptResult result;
   intgo _swig_go_result;
   
@@ -2423,7 +2423,7 @@ intgo _wrap_ALREADY_CONNECTED_TO_ENDPOINT_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_CONNECTION_ATTEMPT_ALREADY_IN_PROGRESS_raknet_65a66565305db59b() {
+intgo _wrap_CONNECTION_ATTEMPT_ALREADY_IN_PROGRESS_wrapper_e0979a90da1444b2() {
   RakNet::ConnectionAttemptResult result;
   intgo _swig_go_result;
   
@@ -2435,7 +2435,7 @@ intgo _wrap_CONNECTION_ATTEMPT_ALREADY_IN_PROGRESS_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_SECURITY_INITIALIZATION_FAILED_raknet_65a66565305db59b() {
+intgo _wrap_SECURITY_INITIALIZATION_FAILED_wrapper_e0979a90da1444b2() {
   RakNet::ConnectionAttemptResult result;
   intgo _swig_go_result;
   
@@ -2447,7 +2447,7 @@ intgo _wrap_SECURITY_INITIALIZATION_FAILED_raknet_65a66565305db59b() {
 }
 
 
-RakNet::SocketDescriptor *_wrap_new_SocketDescriptor__SWIG_0_raknet_65a66565305db59b() {
+RakNet::SocketDescriptor *_wrap_new_SocketDescriptor__SWIG_0_wrapper_e0979a90da1444b2() {
   RakNet::SocketDescriptor *result = 0 ;
   RakNet::SocketDescriptor *_swig_go_result;
   
@@ -2458,7 +2458,7 @@ RakNet::SocketDescriptor *_wrap_new_SocketDescriptor__SWIG_0_raknet_65a66565305d
 }
 
 
-RakNet::SocketDescriptor *_wrap_new_SocketDescriptor__SWIG_1_raknet_65a66565305db59b(short _swig_go_0, _gostring_ _swig_go_1) {
+RakNet::SocketDescriptor *_wrap_new_SocketDescriptor__SWIG_1_wrapper_e0979a90da1444b2(short _swig_go_0, _gostring_ _swig_go_1) {
   unsigned short arg1 ;
   char *arg2 = (char *) 0 ;
   RakNet::SocketDescriptor *result = 0 ;
@@ -2473,7 +2473,7 @@ RakNet::SocketDescriptor *_wrap_new_SocketDescriptor__SWIG_1_raknet_65a66565305d
 }
 
 
-void _wrap_SocketDescriptor_port_set_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0, short _swig_go_1) {
+void _wrap_SocketDescriptor_port_set_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0, short _swig_go_1) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   unsigned short arg2 ;
   
@@ -2485,7 +2485,7 @@ void _wrap_SocketDescriptor_port_set_raknet_65a66565305db59b(RakNet::SocketDescr
 }
 
 
-short _wrap_SocketDescriptor_port_get_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0) {
+short _wrap_SocketDescriptor_port_get_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   unsigned short result;
   short _swig_go_result;
@@ -2498,7 +2498,7 @@ short _wrap_SocketDescriptor_port_get_raknet_65a66565305db59b(RakNet::SocketDesc
 }
 
 
-void _wrap_SocketDescriptor_hostAddress_set_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0, _gostring_ _swig_go_1) {
+void _wrap_SocketDescriptor_hostAddress_set_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0, _gostring_ _swig_go_1) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   char *arg2 ;
   
@@ -2517,7 +2517,7 @@ void _wrap_SocketDescriptor_hostAddress_set_raknet_65a66565305db59b(RakNet::Sock
 }
 
 
-_gostring_ _wrap_SocketDescriptor_hostAddress_get_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0) {
+_gostring_ _wrap_SocketDescriptor_hostAddress_get_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   char *result = 0 ;
   _gostring_ _swig_go_result;
@@ -2530,7 +2530,7 @@ _gostring_ _wrap_SocketDescriptor_hostAddress_get_raknet_65a66565305db59b(RakNet
 }
 
 
-void _wrap_SocketDescriptor_socketFamily_set_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0, short _swig_go_1) {
+void _wrap_SocketDescriptor_socketFamily_set_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0, short _swig_go_1) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   short arg2 ;
   
@@ -2542,7 +2542,7 @@ void _wrap_SocketDescriptor_socketFamily_set_raknet_65a66565305db59b(RakNet::Soc
 }
 
 
-short _wrap_SocketDescriptor_socketFamily_get_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0) {
+short _wrap_SocketDescriptor_socketFamily_get_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   short result;
   short _swig_go_result;
@@ -2555,7 +2555,7 @@ short _wrap_SocketDescriptor_socketFamily_get_raknet_65a66565305db59b(RakNet::So
 }
 
 
-void _wrap_SocketDescriptor_remotePortRakNetWasStartedOn_PS3_PSP2_set_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0, short _swig_go_1) {
+void _wrap_SocketDescriptor_remotePortRakNetWasStartedOn_PS3_PSP2_set_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0, short _swig_go_1) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   unsigned short arg2 ;
   
@@ -2567,7 +2567,7 @@ void _wrap_SocketDescriptor_remotePortRakNetWasStartedOn_PS3_PSP2_set_raknet_65a
 }
 
 
-short _wrap_SocketDescriptor_remotePortRakNetWasStartedOn_PS3_PSP2_get_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0) {
+short _wrap_SocketDescriptor_remotePortRakNetWasStartedOn_PS3_PSP2_get_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   unsigned short result;
   short _swig_go_result;
@@ -2580,7 +2580,7 @@ short _wrap_SocketDescriptor_remotePortRakNetWasStartedOn_PS3_PSP2_get_raknet_65
 }
 
 
-void _wrap_SocketDescriptor_chromeInstance_set_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0, intgo _swig_go_1) {
+void _wrap_SocketDescriptor_chromeInstance_set_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0, intgo _swig_go_1) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   int arg2 ;
   
@@ -2592,7 +2592,7 @@ void _wrap_SocketDescriptor_chromeInstance_set_raknet_65a66565305db59b(RakNet::S
 }
 
 
-intgo _wrap_SocketDescriptor_chromeInstance_get_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0) {
+intgo _wrap_SocketDescriptor_chromeInstance_get_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   int result;
   intgo _swig_go_result;
@@ -2605,7 +2605,7 @@ intgo _wrap_SocketDescriptor_chromeInstance_get_raknet_65a66565305db59b(RakNet::
 }
 
 
-void _wrap_SocketDescriptor_blockingSocket_set_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0, bool _swig_go_1) {
+void _wrap_SocketDescriptor_blockingSocket_set_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0, bool _swig_go_1) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   bool arg2 ;
   
@@ -2617,7 +2617,7 @@ void _wrap_SocketDescriptor_blockingSocket_set_raknet_65a66565305db59b(RakNet::S
 }
 
 
-bool _wrap_SocketDescriptor_blockingSocket_get_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0) {
+bool _wrap_SocketDescriptor_blockingSocket_get_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   bool result;
   bool _swig_go_result;
@@ -2630,7 +2630,7 @@ bool _wrap_SocketDescriptor_blockingSocket_get_raknet_65a66565305db59b(RakNet::S
 }
 
 
-void _wrap_SocketDescriptor_extraSocketOptions_set_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0, intgo _swig_go_1) {
+void _wrap_SocketDescriptor_extraSocketOptions_set_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0, intgo _swig_go_1) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   unsigned int arg2 ;
   
@@ -2642,7 +2642,7 @@ void _wrap_SocketDescriptor_extraSocketOptions_set_raknet_65a66565305db59b(RakNe
 }
 
 
-intgo _wrap_SocketDescriptor_extraSocketOptions_get_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0) {
+intgo _wrap_SocketDescriptor_extraSocketOptions_get_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   unsigned int result;
   intgo _swig_go_result;
@@ -2655,7 +2655,7 @@ intgo _wrap_SocketDescriptor_extraSocketOptions_get_raknet_65a66565305db59b(RakN
 }
 
 
-void _wrap_delete_SocketDescriptor_raknet_65a66565305db59b(RakNet::SocketDescriptor *_swig_go_0) {
+void _wrap_delete_SocketDescriptor_wrapper_e0979a90da1444b2(RakNet::SocketDescriptor *_swig_go_0) {
   RakNet::SocketDescriptor *arg1 = (RakNet::SocketDescriptor *) 0 ;
   
   arg1 = *(RakNet::SocketDescriptor **)&_swig_go_0; 
@@ -2665,7 +2665,7 @@ void _wrap_delete_SocketDescriptor_raknet_65a66565305db59b(RakNet::SocketDescrip
 }
 
 
-void _wrap_RakNetGUID_systemIndex_set_raknet_65a66565305db59b(RakNet::RakNetGUID *_swig_go_0, short _swig_go_1) {
+void _wrap_RakNetGUID_systemIndex_set_wrapper_e0979a90da1444b2(RakNet::RakNetGUID *_swig_go_0, short _swig_go_1) {
   RakNet::RakNetGUID *arg1 = (RakNet::RakNetGUID *) 0 ;
   RakNet::SystemIndex arg2 ;
   
@@ -2677,7 +2677,7 @@ void _wrap_RakNetGUID_systemIndex_set_raknet_65a66565305db59b(RakNet::RakNetGUID
 }
 
 
-short _wrap_RakNetGUID_systemIndex_get_raknet_65a66565305db59b(RakNet::RakNetGUID *_swig_go_0) {
+short _wrap_RakNetGUID_systemIndex_get_wrapper_e0979a90da1444b2(RakNet::RakNetGUID *_swig_go_0) {
   RakNet::RakNetGUID *arg1 = (RakNet::RakNetGUID *) 0 ;
   RakNet::SystemIndex result;
   short _swig_go_result;
@@ -2690,7 +2690,7 @@ short _wrap_RakNetGUID_systemIndex_get_raknet_65a66565305db59b(RakNet::RakNetGUI
 }
 
 
-RakNet::RakNetGUID *_wrap_new_RakNetGUID_raknet_65a66565305db59b() {
+RakNet::RakNetGUID *_wrap_new_RakNetGUID_wrapper_e0979a90da1444b2() {
   RakNet::RakNetGUID *result = 0 ;
   RakNet::RakNetGUID *_swig_go_result;
   
@@ -2701,7 +2701,7 @@ RakNet::RakNetGUID *_wrap_new_RakNetGUID_raknet_65a66565305db59b() {
 }
 
 
-void _wrap_delete_RakNetGUID_raknet_65a66565305db59b(RakNet::RakNetGUID *_swig_go_0) {
+void _wrap_delete_RakNetGUID_wrapper_e0979a90da1444b2(RakNet::RakNetGUID *_swig_go_0) {
   RakNet::RakNetGUID *arg1 = (RakNet::RakNetGUID *) 0 ;
   
   arg1 = *(RakNet::RakNetGUID **)&_swig_go_0; 
@@ -2711,7 +2711,7 @@ void _wrap_delete_RakNetGUID_raknet_65a66565305db59b(RakNet::RakNetGUID *_swig_g
 }
 
 
-RakNet::AddressOrGUID *_wrap_new_AddressOrGUID_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0) {
+RakNet::AddressOrGUID *_wrap_new_AddressOrGUID_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   RakNet::AddressOrGUID *result = 0 ;
   RakNet::AddressOrGUID *_swig_go_result;
@@ -2724,7 +2724,7 @@ RakNet::AddressOrGUID *_wrap_new_AddressOrGUID_raknet_65a66565305db59b(RakNet::P
 }
 
 
-void _wrap_AddressOrGUID_rakNetGuid_set_raknet_65a66565305db59b(RakNet::AddressOrGUID *_swig_go_0, RakNet::RakNetGUID *_swig_go_1) {
+void _wrap_AddressOrGUID_rakNetGuid_set_wrapper_e0979a90da1444b2(RakNet::AddressOrGUID *_swig_go_0, RakNet::RakNetGUID *_swig_go_1) {
   RakNet::AddressOrGUID *arg1 = (RakNet::AddressOrGUID *) 0 ;
   RakNet::RakNetGUID *arg2 = (RakNet::RakNetGUID *) 0 ;
   
@@ -2736,7 +2736,7 @@ void _wrap_AddressOrGUID_rakNetGuid_set_raknet_65a66565305db59b(RakNet::AddressO
 }
 
 
-RakNet::RakNetGUID *_wrap_AddressOrGUID_rakNetGuid_get_raknet_65a66565305db59b(RakNet::AddressOrGUID *_swig_go_0) {
+RakNet::RakNetGUID *_wrap_AddressOrGUID_rakNetGuid_get_wrapper_e0979a90da1444b2(RakNet::AddressOrGUID *_swig_go_0) {
   RakNet::AddressOrGUID *arg1 = (RakNet::AddressOrGUID *) 0 ;
   RakNet::RakNetGUID *result = 0 ;
   RakNet::RakNetGUID *_swig_go_result;
@@ -2749,7 +2749,7 @@ RakNet::RakNetGUID *_wrap_AddressOrGUID_rakNetGuid_get_raknet_65a66565305db59b(R
 }
 
 
-void _wrap_AddressOrGUID_systemAddress_set_raknet_65a66565305db59b(RakNet::AddressOrGUID *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
+void _wrap_AddressOrGUID_systemAddress_set_wrapper_e0979a90da1444b2(RakNet::AddressOrGUID *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
   RakNet::AddressOrGUID *arg1 = (RakNet::AddressOrGUID *) 0 ;
   RakNet::SystemAddress *arg2 = (RakNet::SystemAddress *) 0 ;
   
@@ -2761,7 +2761,7 @@ void _wrap_AddressOrGUID_systemAddress_set_raknet_65a66565305db59b(RakNet::Addre
 }
 
 
-RakNet::SystemAddress *_wrap_AddressOrGUID_systemAddress_get_raknet_65a66565305db59b(RakNet::AddressOrGUID *_swig_go_0) {
+RakNet::SystemAddress *_wrap_AddressOrGUID_systemAddress_get_wrapper_e0979a90da1444b2(RakNet::AddressOrGUID *_swig_go_0) {
   RakNet::AddressOrGUID *arg1 = (RakNet::AddressOrGUID *) 0 ;
   RakNet::SystemAddress *result = 0 ;
   RakNet::SystemAddress *_swig_go_result;
@@ -2774,7 +2774,7 @@ RakNet::SystemAddress *_wrap_AddressOrGUID_systemAddress_get_raknet_65a66565305d
 }
 
 
-void _wrap_delete_AddressOrGUID_raknet_65a66565305db59b(RakNet::AddressOrGUID *_swig_go_0) {
+void _wrap_delete_AddressOrGUID_wrapper_e0979a90da1444b2(RakNet::AddressOrGUID *_swig_go_0) {
   RakNet::AddressOrGUID *arg1 = (RakNet::AddressOrGUID *) 0 ;
   
   arg1 = *(RakNet::AddressOrGUID **)&_swig_go_0; 
@@ -2784,7 +2784,7 @@ void _wrap_delete_AddressOrGUID_raknet_65a66565305db59b(RakNet::AddressOrGUID *_
 }
 
 
-RakNet::SystemAddress *_wrap_new_SystemAddress__SWIG_0_raknet_65a66565305db59b() {
+RakNet::SystemAddress *_wrap_new_SystemAddress__SWIG_0_wrapper_e0979a90da1444b2() {
   RakNet::SystemAddress *result = 0 ;
   RakNet::SystemAddress *_swig_go_result;
   
@@ -2795,7 +2795,7 @@ RakNet::SystemAddress *_wrap_new_SystemAddress__SWIG_0_raknet_65a66565305db59b()
 }
 
 
-RakNet::SystemAddress *_wrap_new_SystemAddress__SWIG_1_raknet_65a66565305db59b(_gostring_ _swig_go_0) {
+RakNet::SystemAddress *_wrap_new_SystemAddress__SWIG_1_wrapper_e0979a90da1444b2(_gostring_ _swig_go_0) {
   char *arg1 = (char *) 0 ;
   RakNet::SystemAddress *result = 0 ;
   RakNet::SystemAddress *_swig_go_result;
@@ -2808,7 +2808,7 @@ RakNet::SystemAddress *_wrap_new_SystemAddress__SWIG_1_raknet_65a66565305db59b(_
 }
 
 
-RakNet::SystemAddress *_wrap_new_SystemAddress__SWIG_2_raknet_65a66565305db59b(_gostring_ _swig_go_0, short _swig_go_1) {
+RakNet::SystemAddress *_wrap_new_SystemAddress__SWIG_2_wrapper_e0979a90da1444b2(_gostring_ _swig_go_0, short _swig_go_1) {
   char *arg1 = (char *) 0 ;
   unsigned short arg2 ;
   RakNet::SystemAddress *result = 0 ;
@@ -2823,7 +2823,7 @@ RakNet::SystemAddress *_wrap_new_SystemAddress__SWIG_2_raknet_65a66565305db59b(_
 }
 
 
-void _wrap_SystemAddress_debugPort_set_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, short _swig_go_1) {
+void _wrap_SystemAddress_debugPort_set_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, short _swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   unsigned short arg2 ;
   
@@ -2835,7 +2835,7 @@ void _wrap_SystemAddress_debugPort_set_raknet_65a66565305db59b(RakNet::SystemAdd
 }
 
 
-short _wrap_SystemAddress_debugPort_get_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0) {
+short _wrap_SystemAddress_debugPort_get_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   unsigned short result;
   short _swig_go_result;
@@ -2848,7 +2848,7 @@ short _wrap_SystemAddress_debugPort_get_raknet_65a66565305db59b(RakNet::SystemAd
 }
 
 
-intgo _wrap_SystemAddress_size_raknet_65a66565305db59b() {
+intgo _wrap_SystemAddress_size_wrapper_e0979a90da1444b2() {
   int result;
   intgo _swig_go_result;
   
@@ -2859,7 +2859,7 @@ intgo _wrap_SystemAddress_size_raknet_65a66565305db59b() {
 }
 
 
-long long _wrap_SystemAddress_ToInteger_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0) {
+long long _wrap_SystemAddress_ToInteger_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0) {
   RakNet::SystemAddress *arg1 = 0 ;
   unsigned long result;
   long long _swig_go_result;
@@ -2872,7 +2872,7 @@ long long _wrap_SystemAddress_ToInteger_raknet_65a66565305db59b(RakNet::SystemAd
 }
 
 
-char _wrap_SystemAddress_GetIPVersion_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0) {
+char _wrap_SystemAddress_GetIPVersion_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   unsigned char result;
   char _swig_go_result;
@@ -2885,7 +2885,7 @@ char _wrap_SystemAddress_GetIPVersion_raknet_65a66565305db59b(RakNet::SystemAddr
 }
 
 
-intgo _wrap_SystemAddress_GetIPPROTO_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0) {
+intgo _wrap_SystemAddress_GetIPPROTO_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   unsigned int result;
   intgo _swig_go_result;
@@ -2898,7 +2898,7 @@ intgo _wrap_SystemAddress_GetIPPROTO_raknet_65a66565305db59b(RakNet::SystemAddre
 }
 
 
-void _wrap_SystemAddress_SetToLoopback__SWIG_0_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0) {
+void _wrap_SystemAddress_SetToLoopback__SWIG_0_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   
   arg1 = *(RakNet::SystemAddress **)&_swig_go_0; 
@@ -2908,7 +2908,7 @@ void _wrap_SystemAddress_SetToLoopback__SWIG_0_raknet_65a66565305db59b(RakNet::S
 }
 
 
-void _wrap_SystemAddress_SetToLoopback__SWIG_1_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, char _swig_go_1) {
+void _wrap_SystemAddress_SetToLoopback__SWIG_1_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, char _swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   unsigned char arg2 ;
   
@@ -2920,7 +2920,7 @@ void _wrap_SystemAddress_SetToLoopback__SWIG_1_raknet_65a66565305db59b(RakNet::S
 }
 
 
-bool _wrap_SystemAddress_IsLoopback_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0) {
+bool _wrap_SystemAddress_IsLoopback_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   bool result;
   bool _swig_go_result;
@@ -2933,7 +2933,7 @@ bool _wrap_SystemAddress_IsLoopback_raknet_65a66565305db59b(RakNet::SystemAddres
 }
 
 
-_gostring_ _wrap_SystemAddress_ToString__SWIG_0_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, bool _swig_go_1, char _swig_go_2) {
+_gostring_ _wrap_SystemAddress_ToString__SWIG_0_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, bool _swig_go_1, char _swig_go_2) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   bool arg2 ;
   char arg3 ;
@@ -2950,7 +2950,7 @@ _gostring_ _wrap_SystemAddress_ToString__SWIG_0_raknet_65a66565305db59b(RakNet::
 }
 
 
-_gostring_ _wrap_SystemAddress_ToString__SWIG_1_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, bool _swig_go_1) {
+_gostring_ _wrap_SystemAddress_ToString__SWIG_1_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, bool _swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   bool arg2 ;
   char *result = 0 ;
@@ -2965,7 +2965,7 @@ _gostring_ _wrap_SystemAddress_ToString__SWIG_1_raknet_65a66565305db59b(RakNet::
 }
 
 
-_gostring_ _wrap_SystemAddress_ToString__SWIG_2_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0) {
+_gostring_ _wrap_SystemAddress_ToString__SWIG_2_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   char *result = 0 ;
   _gostring_ _swig_go_result;
@@ -2978,7 +2978,7 @@ _gostring_ _wrap_SystemAddress_ToString__SWIG_2_raknet_65a66565305db59b(RakNet::
 }
 
 
-void _wrap_SystemAddress_ToString__SWIG_3_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, bool _swig_go_1, _gostring_ _swig_go_2, char _swig_go_3) {
+void _wrap_SystemAddress_ToString__SWIG_3_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, bool _swig_go_1, _gostring_ _swig_go_2, char _swig_go_3) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   bool arg2 ;
   char *arg3 = (char *) 0 ;
@@ -2994,7 +2994,7 @@ void _wrap_SystemAddress_ToString__SWIG_3_raknet_65a66565305db59b(RakNet::System
 }
 
 
-void _wrap_SystemAddress_ToString__SWIG_4_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, bool _swig_go_1, _gostring_ _swig_go_2) {
+void _wrap_SystemAddress_ToString__SWIG_4_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, bool _swig_go_1, _gostring_ _swig_go_2) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   bool arg2 ;
   char *arg3 = (char *) 0 ;
@@ -3008,7 +3008,7 @@ void _wrap_SystemAddress_ToString__SWIG_4_raknet_65a66565305db59b(RakNet::System
 }
 
 
-bool _wrap_SystemAddress_FromString__SWIG_0_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1, char _swig_go_2, intgo _swig_go_3) {
+bool _wrap_SystemAddress_FromString__SWIG_0_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1, char _swig_go_2, intgo _swig_go_3) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   char *arg2 = (char *) 0 ;
   char arg3 ;
@@ -3027,7 +3027,7 @@ bool _wrap_SystemAddress_FromString__SWIG_0_raknet_65a66565305db59b(RakNet::Syst
 }
 
 
-bool _wrap_SystemAddress_FromString__SWIG_1_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1, char _swig_go_2) {
+bool _wrap_SystemAddress_FromString__SWIG_1_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1, char _swig_go_2) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   char *arg2 = (char *) 0 ;
   char arg3 ;
@@ -3044,7 +3044,7 @@ bool _wrap_SystemAddress_FromString__SWIG_1_raknet_65a66565305db59b(RakNet::Syst
 }
 
 
-bool _wrap_SystemAddress_FromString__SWIG_2_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_SystemAddress_FromString__SWIG_2_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -3059,7 +3059,7 @@ bool _wrap_SystemAddress_FromString__SWIG_2_raknet_65a66565305db59b(RakNet::Syst
 }
 
 
-bool _wrap_SystemAddress_FromStringExplicitPort__SWIG_0_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, intgo _swig_go_3) {
+bool _wrap_SystemAddress_FromStringExplicitPort__SWIG_0_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, intgo _swig_go_3) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   char *arg2 = (char *) 0 ;
   unsigned short arg3 ;
@@ -3078,7 +3078,7 @@ bool _wrap_SystemAddress_FromStringExplicitPort__SWIG_0_raknet_65a66565305db59b(
 }
 
 
-bool _wrap_SystemAddress_FromStringExplicitPort__SWIG_1_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2) {
+bool _wrap_SystemAddress_FromStringExplicitPort__SWIG_1_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   char *arg2 = (char *) 0 ;
   unsigned short arg3 ;
@@ -3095,7 +3095,7 @@ bool _wrap_SystemAddress_FromStringExplicitPort__SWIG_1_raknet_65a66565305db59b(
 }
 
 
-void _wrap_SystemAddress_CopyPort_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
+void _wrap_SystemAddress_CopyPort_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   RakNet::SystemAddress *arg2 = 0 ;
   
@@ -3107,7 +3107,7 @@ void _wrap_SystemAddress_CopyPort_raknet_65a66565305db59b(RakNet::SystemAddress 
 }
 
 
-bool _wrap_SystemAddress_EqualsExcludingPort_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
+bool _wrap_SystemAddress_EqualsExcludingPort_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   RakNet::SystemAddress *arg2 = 0 ;
   bool result;
@@ -3122,7 +3122,7 @@ bool _wrap_SystemAddress_EqualsExcludingPort_raknet_65a66565305db59b(RakNet::Sys
 }
 
 
-short _wrap_SystemAddress_GetPort_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0) {
+short _wrap_SystemAddress_GetPort_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   unsigned short result;
   short _swig_go_result;
@@ -3135,7 +3135,7 @@ short _wrap_SystemAddress_GetPort_raknet_65a66565305db59b(RakNet::SystemAddress 
 }
 
 
-short _wrap_SystemAddress_GetPortNetworkOrder_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0) {
+short _wrap_SystemAddress_GetPortNetworkOrder_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   unsigned short result;
   short _swig_go_result;
@@ -3148,7 +3148,7 @@ short _wrap_SystemAddress_GetPortNetworkOrder_raknet_65a66565305db59b(RakNet::Sy
 }
 
 
-void _wrap_SystemAddress_SetPortHostOrder_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, short _swig_go_1) {
+void _wrap_SystemAddress_SetPortHostOrder_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, short _swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   unsigned short arg2 ;
   
@@ -3160,7 +3160,7 @@ void _wrap_SystemAddress_SetPortHostOrder_raknet_65a66565305db59b(RakNet::System
 }
 
 
-void _wrap_SystemAddress_SetPortNetworkOrder_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, short _swig_go_1) {
+void _wrap_SystemAddress_SetPortNetworkOrder_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, short _swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   unsigned short arg2 ;
   
@@ -3172,7 +3172,7 @@ void _wrap_SystemAddress_SetPortNetworkOrder_raknet_65a66565305db59b(RakNet::Sys
 }
 
 
-bool _wrap_SystemAddress_SetBinaryAddress__SWIG_0_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1, char _swig_go_2) {
+bool _wrap_SystemAddress_SetBinaryAddress__SWIG_0_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1, char _swig_go_2) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   char *arg2 = (char *) 0 ;
   char arg3 ;
@@ -3189,7 +3189,7 @@ bool _wrap_SystemAddress_SetBinaryAddress__SWIG_0_raknet_65a66565305db59b(RakNet
 }
 
 
-bool _wrap_SystemAddress_SetBinaryAddress__SWIG_1_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_SystemAddress_SetBinaryAddress__SWIG_1_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, _gostring_ _swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -3204,7 +3204,7 @@ bool _wrap_SystemAddress_SetBinaryAddress__SWIG_1_raknet_65a66565305db59b(RakNet
 }
 
 
-void _wrap_SystemAddress_ToString_Old__SWIG_0_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, bool _swig_go_1, _gostring_ _swig_go_2, char _swig_go_3) {
+void _wrap_SystemAddress_ToString_Old__SWIG_0_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, bool _swig_go_1, _gostring_ _swig_go_2, char _swig_go_3) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   bool arg2 ;
   char *arg3 = (char *) 0 ;
@@ -3220,7 +3220,7 @@ void _wrap_SystemAddress_ToString_Old__SWIG_0_raknet_65a66565305db59b(RakNet::Sy
 }
 
 
-void _wrap_SystemAddress_ToString_Old__SWIG_1_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, bool _swig_go_1, _gostring_ _swig_go_2) {
+void _wrap_SystemAddress_ToString_Old__SWIG_1_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, bool _swig_go_1, _gostring_ _swig_go_2) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   bool arg2 ;
   char *arg3 = (char *) 0 ;
@@ -3234,7 +3234,7 @@ void _wrap_SystemAddress_ToString_Old__SWIG_1_raknet_65a66565305db59b(RakNet::Sy
 }
 
 
-void _wrap_SystemAddress_FixForIPVersion_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
+void _wrap_SystemAddress_FixForIPVersion_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   RakNet::SystemAddress *arg2 = 0 ;
   
@@ -3246,7 +3246,7 @@ void _wrap_SystemAddress_FixForIPVersion_raknet_65a66565305db59b(RakNet::SystemA
 }
 
 
-bool _wrap_SystemAddress_IsLANAddress_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0) {
+bool _wrap_SystemAddress_IsLANAddress_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   bool result;
   bool _swig_go_result;
@@ -3259,7 +3259,7 @@ bool _wrap_SystemAddress_IsLANAddress_raknet_65a66565305db59b(RakNet::SystemAddr
 }
 
 
-RakNet::SystemAddress *_wrap_SystemAddress_Copy_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
+RakNet::SystemAddress *_wrap_SystemAddress_Copy_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   RakNet::SystemAddress *arg2 = 0 ;
   RakNet::SystemAddress *result = 0 ;
@@ -3274,7 +3274,7 @@ RakNet::SystemAddress *_wrap_SystemAddress_Copy_raknet_65a66565305db59b(RakNet::
 }
 
 
-bool _wrap_SystemAddress_Equals_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
+bool _wrap_SystemAddress_Equals_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   RakNet::SystemAddress *arg2 = 0 ;
   bool result;
@@ -3289,7 +3289,7 @@ bool _wrap_SystemAddress_Equals_raknet_65a66565305db59b(RakNet::SystemAddress *_
 }
 
 
-bool _wrap_SystemAddress_NotEquals_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
+bool _wrap_SystemAddress_NotEquals_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   RakNet::SystemAddress *arg2 = 0 ;
   bool result;
@@ -3304,7 +3304,7 @@ bool _wrap_SystemAddress_NotEquals_raknet_65a66565305db59b(RakNet::SystemAddress
 }
 
 
-bool _wrap_SystemAddress_GreaterThan_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
+bool _wrap_SystemAddress_GreaterThan_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   RakNet::SystemAddress *arg2 = 0 ;
   bool result;
@@ -3319,7 +3319,7 @@ bool _wrap_SystemAddress_GreaterThan_raknet_65a66565305db59b(RakNet::SystemAddre
 }
 
 
-bool _wrap_SystemAddress_LessThan_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
+bool _wrap_SystemAddress_LessThan_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   RakNet::SystemAddress *arg2 = 0 ;
   bool result;
@@ -3334,7 +3334,7 @@ bool _wrap_SystemAddress_LessThan_raknet_65a66565305db59b(RakNet::SystemAddress 
 }
 
 
-void _wrap_SystemAddress_systemIndex_set_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0, short _swig_go_1) {
+void _wrap_SystemAddress_systemIndex_set_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0, short _swig_go_1) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   RakNet::SystemIndex arg2 ;
   
@@ -3346,7 +3346,7 @@ void _wrap_SystemAddress_systemIndex_set_raknet_65a66565305db59b(RakNet::SystemA
 }
 
 
-short _wrap_SystemAddress_systemIndex_get_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0) {
+short _wrap_SystemAddress_systemIndex_get_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   RakNet::SystemIndex result;
   short _swig_go_result;
@@ -3359,7 +3359,7 @@ short _wrap_SystemAddress_systemIndex_get_raknet_65a66565305db59b(RakNet::System
 }
 
 
-void _wrap_delete_SystemAddress_raknet_65a66565305db59b(RakNet::SystemAddress *_swig_go_0) {
+void _wrap_delete_SystemAddress_wrapper_e0979a90da1444b2(RakNet::SystemAddress *_swig_go_0) {
   RakNet::SystemAddress *arg1 = (RakNet::SystemAddress *) 0 ;
   
   arg1 = *(RakNet::SystemAddress **)&_swig_go_0; 
@@ -3369,7 +3369,7 @@ void _wrap_delete_SystemAddress_raknet_65a66565305db59b(RakNet::SystemAddress *_
 }
 
 
-void _wrap_Packet_systemAddress_set_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
+void _wrap_Packet_systemAddress_set_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0, RakNet::SystemAddress *_swig_go_1) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   RakNet::SystemAddress *arg2 = (RakNet::SystemAddress *) 0 ;
   
@@ -3381,7 +3381,7 @@ void _wrap_Packet_systemAddress_set_raknet_65a66565305db59b(RakNet::Packet *_swi
 }
 
 
-RakNet::SystemAddress *_wrap_Packet_systemAddress_get_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0) {
+RakNet::SystemAddress *_wrap_Packet_systemAddress_get_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   RakNet::SystemAddress *result = 0 ;
   RakNet::SystemAddress *_swig_go_result;
@@ -3394,7 +3394,7 @@ RakNet::SystemAddress *_wrap_Packet_systemAddress_get_raknet_65a66565305db59b(Ra
 }
 
 
-void _wrap_Packet_guid_set_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0, RakNet::RakNetGUID *_swig_go_1) {
+void _wrap_Packet_guid_set_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0, RakNet::RakNetGUID *_swig_go_1) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   RakNet::RakNetGUID *arg2 = (RakNet::RakNetGUID *) 0 ;
   
@@ -3406,7 +3406,7 @@ void _wrap_Packet_guid_set_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0, R
 }
 
 
-RakNet::RakNetGUID *_wrap_Packet_guid_get_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0) {
+RakNet::RakNetGUID *_wrap_Packet_guid_get_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   RakNet::RakNetGUID *result = 0 ;
   RakNet::RakNetGUID *_swig_go_result;
@@ -3419,7 +3419,7 @@ RakNet::RakNetGUID *_wrap_Packet_guid_get_raknet_65a66565305db59b(RakNet::Packet
 }
 
 
-void _wrap_Packet_length_set_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0, intgo _swig_go_1) {
+void _wrap_Packet_length_set_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0, intgo _swig_go_1) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   unsigned int arg2 ;
   
@@ -3431,7 +3431,7 @@ void _wrap_Packet_length_set_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0,
 }
 
 
-intgo _wrap_Packet_length_get_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0) {
+intgo _wrap_Packet_length_get_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   unsigned int result;
   intgo _swig_go_result;
@@ -3444,7 +3444,7 @@ intgo _wrap_Packet_length_get_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0
 }
 
 
-void _wrap_Packet_bitSize_set_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0, uint32_t *_swig_go_1) {
+void _wrap_Packet_bitSize_set_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0, uint32_t *_swig_go_1) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   uint32_t arg2 ;
   uint32_t *argp2 ;
@@ -3463,7 +3463,7 @@ void _wrap_Packet_bitSize_set_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0
 }
 
 
-uint32_t *_wrap_Packet_bitSize_get_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0) {
+uint32_t *_wrap_Packet_bitSize_get_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   uint32_t result;
   uint32_t *_swig_go_result;
@@ -3476,7 +3476,7 @@ uint32_t *_wrap_Packet_bitSize_get_raknet_65a66565305db59b(RakNet::Packet *_swig
 }
 
 
-void _wrap_Packet_data_set_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0, char *_swig_go_1) {
+void _wrap_Packet_data_set_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0, char *_swig_go_1) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   unsigned char *arg2 = (unsigned char *) 0 ;
   
@@ -3488,7 +3488,7 @@ void _wrap_Packet_data_set_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0, c
 }
 
 
-char *_wrap_Packet_data_get_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0) {
+char *_wrap_Packet_data_get_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   unsigned char *result = 0 ;
   char *_swig_go_result;
@@ -3501,7 +3501,7 @@ char *_wrap_Packet_data_get_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0) 
 }
 
 
-void _wrap_Packet_deleteData_set_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0, bool _swig_go_1) {
+void _wrap_Packet_deleteData_set_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0, bool _swig_go_1) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   bool arg2 ;
   
@@ -3513,7 +3513,7 @@ void _wrap_Packet_deleteData_set_raknet_65a66565305db59b(RakNet::Packet *_swig_g
 }
 
 
-bool _wrap_Packet_deleteData_get_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0) {
+bool _wrap_Packet_deleteData_get_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   bool result;
   bool _swig_go_result;
@@ -3526,7 +3526,7 @@ bool _wrap_Packet_deleteData_get_raknet_65a66565305db59b(RakNet::Packet *_swig_g
 }
 
 
-void _wrap_Packet_wasGeneratedLocally_set_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0, bool _swig_go_1) {
+void _wrap_Packet_wasGeneratedLocally_set_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0, bool _swig_go_1) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   bool arg2 ;
   
@@ -3538,7 +3538,7 @@ void _wrap_Packet_wasGeneratedLocally_set_raknet_65a66565305db59b(RakNet::Packet
 }
 
 
-bool _wrap_Packet_wasGeneratedLocally_get_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0) {
+bool _wrap_Packet_wasGeneratedLocally_get_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   bool result;
   bool _swig_go_result;
@@ -3551,7 +3551,7 @@ bool _wrap_Packet_wasGeneratedLocally_get_raknet_65a66565305db59b(RakNet::Packet
 }
 
 
-RakNet::Packet *_wrap_new_Packet_raknet_65a66565305db59b() {
+RakNet::Packet *_wrap_new_Packet_wrapper_e0979a90da1444b2() {
   RakNet::Packet *result = 0 ;
   RakNet::Packet *_swig_go_result;
   
@@ -3562,7 +3562,7 @@ RakNet::Packet *_wrap_new_Packet_raknet_65a66565305db59b() {
 }
 
 
-void _wrap_delete_Packet_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0) {
+void _wrap_delete_Packet_wrapper_e0979a90da1444b2(RakNet::Packet *_swig_go_0) {
   RakNet::Packet *arg1 = (RakNet::Packet *) 0 ;
   
   arg1 = *(RakNet::Packet **)&_swig_go_0; 
@@ -3572,7 +3572,7 @@ void _wrap_delete_Packet_raknet_65a66565305db59b(RakNet::Packet *_swig_go_0) {
 }
 
 
-intgo _wrap_PKM_INSECURE_CONNECTION_raknet_65a66565305db59b() {
+intgo _wrap_PKM_INSECURE_CONNECTION_wrapper_e0979a90da1444b2() {
   RakNet::PublicKeyMode result;
   intgo _swig_go_result;
   
@@ -3584,7 +3584,7 @@ intgo _wrap_PKM_INSECURE_CONNECTION_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_PKM_ACCEPT_ANY_PUBLIC_KEY_raknet_65a66565305db59b() {
+intgo _wrap_PKM_ACCEPT_ANY_PUBLIC_KEY_wrapper_e0979a90da1444b2() {
   RakNet::PublicKeyMode result;
   intgo _swig_go_result;
   
@@ -3596,7 +3596,7 @@ intgo _wrap_PKM_ACCEPT_ANY_PUBLIC_KEY_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_PKM_USE_KNOWN_PUBLIC_KEY_raknet_65a66565305db59b() {
+intgo _wrap_PKM_USE_KNOWN_PUBLIC_KEY_wrapper_e0979a90da1444b2() {
   RakNet::PublicKeyMode result;
   intgo _swig_go_result;
   
@@ -3608,7 +3608,7 @@ intgo _wrap_PKM_USE_KNOWN_PUBLIC_KEY_raknet_65a66565305db59b() {
 }
 
 
-intgo _wrap_PKM_USE_TWO_WAY_AUTHENTICATION_raknet_65a66565305db59b() {
+intgo _wrap_PKM_USE_TWO_WAY_AUTHENTICATION_wrapper_e0979a90da1444b2() {
   RakNet::PublicKeyMode result;
   intgo _swig_go_result;
   
@@ -3620,7 +3620,7 @@ intgo _wrap_PKM_USE_TWO_WAY_AUTHENTICATION_raknet_65a66565305db59b() {
 }
 
 
-void _wrap_PublicKey_publicKeyMode_set_raknet_65a66565305db59b(RakNet::PublicKey *_swig_go_0, intgo _swig_go_1) {
+void _wrap_PublicKey_publicKeyMode_set_wrapper_e0979a90da1444b2(RakNet::PublicKey *_swig_go_0, intgo _swig_go_1) {
   RakNet::PublicKey *arg1 = (RakNet::PublicKey *) 0 ;
   RakNet::PublicKeyMode arg2 ;
   
@@ -3632,7 +3632,7 @@ void _wrap_PublicKey_publicKeyMode_set_raknet_65a66565305db59b(RakNet::PublicKey
 }
 
 
-intgo _wrap_PublicKey_publicKeyMode_get_raknet_65a66565305db59b(RakNet::PublicKey *_swig_go_0) {
+intgo _wrap_PublicKey_publicKeyMode_get_wrapper_e0979a90da1444b2(RakNet::PublicKey *_swig_go_0) {
   RakNet::PublicKey *arg1 = (RakNet::PublicKey *) 0 ;
   RakNet::PublicKeyMode result;
   intgo _swig_go_result;
@@ -3645,7 +3645,7 @@ intgo _wrap_PublicKey_publicKeyMode_get_raknet_65a66565305db59b(RakNet::PublicKe
 }
 
 
-void _wrap_PublicKey_remoteServerPublicKey_set_raknet_65a66565305db59b(RakNet::PublicKey *_swig_go_0, _gostring_ _swig_go_1) {
+void _wrap_PublicKey_remoteServerPublicKey_set_wrapper_e0979a90da1444b2(RakNet::PublicKey *_swig_go_0, _gostring_ _swig_go_1) {
   RakNet::PublicKey *arg1 = (RakNet::PublicKey *) 0 ;
   char *arg2 = (char *) 0 ;
   
@@ -3665,7 +3665,7 @@ void _wrap_PublicKey_remoteServerPublicKey_set_raknet_65a66565305db59b(RakNet::P
 }
 
 
-_gostring_ _wrap_PublicKey_remoteServerPublicKey_get_raknet_65a66565305db59b(RakNet::PublicKey *_swig_go_0) {
+_gostring_ _wrap_PublicKey_remoteServerPublicKey_get_wrapper_e0979a90da1444b2(RakNet::PublicKey *_swig_go_0) {
   RakNet::PublicKey *arg1 = (RakNet::PublicKey *) 0 ;
   char *result = 0 ;
   _gostring_ _swig_go_result;
@@ -3678,7 +3678,7 @@ _gostring_ _wrap_PublicKey_remoteServerPublicKey_get_raknet_65a66565305db59b(Rak
 }
 
 
-void _wrap_PublicKey_myPublicKey_set_raknet_65a66565305db59b(RakNet::PublicKey *_swig_go_0, _gostring_ _swig_go_1) {
+void _wrap_PublicKey_myPublicKey_set_wrapper_e0979a90da1444b2(RakNet::PublicKey *_swig_go_0, _gostring_ _swig_go_1) {
   RakNet::PublicKey *arg1 = (RakNet::PublicKey *) 0 ;
   char *arg2 = (char *) 0 ;
   
@@ -3698,7 +3698,7 @@ void _wrap_PublicKey_myPublicKey_set_raknet_65a66565305db59b(RakNet::PublicKey *
 }
 
 
-_gostring_ _wrap_PublicKey_myPublicKey_get_raknet_65a66565305db59b(RakNet::PublicKey *_swig_go_0) {
+_gostring_ _wrap_PublicKey_myPublicKey_get_wrapper_e0979a90da1444b2(RakNet::PublicKey *_swig_go_0) {
   RakNet::PublicKey *arg1 = (RakNet::PublicKey *) 0 ;
   char *result = 0 ;
   _gostring_ _swig_go_result;
@@ -3711,7 +3711,7 @@ _gostring_ _wrap_PublicKey_myPublicKey_get_raknet_65a66565305db59b(RakNet::Publi
 }
 
 
-void _wrap_PublicKey_myPrivateKey_set_raknet_65a66565305db59b(RakNet::PublicKey *_swig_go_0, _gostring_ _swig_go_1) {
+void _wrap_PublicKey_myPrivateKey_set_wrapper_e0979a90da1444b2(RakNet::PublicKey *_swig_go_0, _gostring_ _swig_go_1) {
   RakNet::PublicKey *arg1 = (RakNet::PublicKey *) 0 ;
   char *arg2 = (char *) 0 ;
   
@@ -3731,7 +3731,7 @@ void _wrap_PublicKey_myPrivateKey_set_raknet_65a66565305db59b(RakNet::PublicKey 
 }
 
 
-_gostring_ _wrap_PublicKey_myPrivateKey_get_raknet_65a66565305db59b(RakNet::PublicKey *_swig_go_0) {
+_gostring_ _wrap_PublicKey_myPrivateKey_get_wrapper_e0979a90da1444b2(RakNet::PublicKey *_swig_go_0) {
   RakNet::PublicKey *arg1 = (RakNet::PublicKey *) 0 ;
   char *result = 0 ;
   _gostring_ _swig_go_result;
@@ -3744,7 +3744,7 @@ _gostring_ _wrap_PublicKey_myPrivateKey_get_raknet_65a66565305db59b(RakNet::Publ
 }
 
 
-RakNet::PublicKey *_wrap_new_PublicKey_raknet_65a66565305db59b() {
+RakNet::PublicKey *_wrap_new_PublicKey_wrapper_e0979a90da1444b2() {
   RakNet::PublicKey *result = 0 ;
   RakNet::PublicKey *_swig_go_result;
   
@@ -3755,7 +3755,7 @@ RakNet::PublicKey *_wrap_new_PublicKey_raknet_65a66565305db59b() {
 }
 
 
-void _wrap_delete_PublicKey_raknet_65a66565305db59b(RakNet::PublicKey *_swig_go_0) {
+void _wrap_delete_PublicKey_wrapper_e0979a90da1444b2(RakNet::PublicKey *_swig_go_0) {
   RakNet::PublicKey *arg1 = (RakNet::PublicKey *) 0 ;
   
   arg1 = *(RakNet::PublicKey **)&_swig_go_0; 
@@ -3765,7 +3765,7 @@ void _wrap_delete_PublicKey_raknet_65a66565305db59b(RakNet::PublicKey *_swig_go_
 }
 
 
-RakNet::RakPeerInterface *_wrap_RakPeerInterface_GetInstance_raknet_65a66565305db59b() {
+RakNet::RakPeerInterface *_wrap_RakPeerInterface_GetInstance_wrapper_e0979a90da1444b2() {
   RakNet::RakPeerInterface *result = 0 ;
   RakNet::RakPeerInterface *_swig_go_result;
   
@@ -3776,7 +3776,7 @@ RakNet::RakPeerInterface *_wrap_RakPeerInterface_GetInstance_raknet_65a66565305d
 }
 
 
-void _wrap_RakPeerInterface_DestroyInstance_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0) {
+void _wrap_RakPeerInterface_DestroyInstance_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   
   arg1 = *(RakNet::RakPeerInterface **)&_swig_go_0; 
@@ -3786,7 +3786,7 @@ void _wrap_RakPeerInterface_DestroyInstance_raknet_65a66565305db59b(RakNet::RakP
 }
 
 
-void _wrap_delete_RakPeerInterface_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0) {
+void _wrap_delete_RakPeerInterface_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   
   arg1 = *(RakNet::RakPeerInterface **)&_swig_go_0; 
@@ -3796,7 +3796,7 @@ void _wrap_delete_RakPeerInterface_raknet_65a66565305db59b(RakNet::RakPeerInterf
 }
 
 
-intgo _wrap_RakPeerInterface_Startup__SWIG_0_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, intgo _swig_go_1, RakNet::SocketDescriptor *_swig_go_2, intgo _swig_go_3, intgo _swig_go_4) {
+intgo _wrap_RakPeerInterface_Startup__SWIG_0_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, intgo _swig_go_1, RakNet::SocketDescriptor *_swig_go_2, intgo _swig_go_3, intgo _swig_go_4) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   unsigned int arg2 ;
   RakNet::SocketDescriptor *arg3 = (RakNet::SocketDescriptor *) 0 ;
@@ -3817,7 +3817,7 @@ intgo _wrap_RakPeerInterface_Startup__SWIG_0_raknet_65a66565305db59b(RakNet::Rak
 }
 
 
-intgo _wrap_RakPeerInterface_Startup__SWIG_1_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, intgo _swig_go_1, RakNet::SocketDescriptor *_swig_go_2, intgo _swig_go_3) {
+intgo _wrap_RakPeerInterface_Startup__SWIG_1_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, intgo _swig_go_1, RakNet::SocketDescriptor *_swig_go_2, intgo _swig_go_3) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   unsigned int arg2 ;
   RakNet::SocketDescriptor *arg3 = (RakNet::SocketDescriptor *) 0 ;
@@ -3836,7 +3836,7 @@ intgo _wrap_RakPeerInterface_Startup__SWIG_1_raknet_65a66565305db59b(RakNet::Rak
 }
 
 
-void _wrap_RakPeerInterface_SetMaximumIncomingConnections_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, short _swig_go_1) {
+void _wrap_RakPeerInterface_SetMaximumIncomingConnections_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, short _swig_go_1) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   unsigned short arg2 ;
   
@@ -3848,7 +3848,7 @@ void _wrap_RakPeerInterface_SetMaximumIncomingConnections_raknet_65a66565305db59
 }
 
 
-intgo _wrap_RakPeerInterface_Connect__SWIG_0_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, _gostring_ _swig_go_3, intgo _swig_go_4, RakNet::PublicKey *_swig_go_5, intgo _swig_go_6, intgo _swig_go_7, intgo _swig_go_8, uint32_t *_swig_go_9) {
+intgo _wrap_RakPeerInterface_Connect__SWIG_0_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, _gostring_ _swig_go_3, intgo _swig_go_4, RakNet::PublicKey *_swig_go_5, intgo _swig_go_6, intgo _swig_go_7, intgo _swig_go_8, uint32_t *_swig_go_9) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   char *arg2 = (char *) 0 ;
   unsigned short arg3 ;
@@ -3886,7 +3886,7 @@ intgo _wrap_RakPeerInterface_Connect__SWIG_0_raknet_65a66565305db59b(RakNet::Rak
 }
 
 
-intgo _wrap_RakPeerInterface_Connect__SWIG_1_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, _gostring_ _swig_go_3, intgo _swig_go_4, RakNet::PublicKey *_swig_go_5, intgo _swig_go_6, intgo _swig_go_7, intgo _swig_go_8) {
+intgo _wrap_RakPeerInterface_Connect__SWIG_1_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, _gostring_ _swig_go_3, intgo _swig_go_4, RakNet::PublicKey *_swig_go_5, intgo _swig_go_6, intgo _swig_go_7, intgo _swig_go_8) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   char *arg2 = (char *) 0 ;
   unsigned short arg3 ;
@@ -3915,7 +3915,7 @@ intgo _wrap_RakPeerInterface_Connect__SWIG_1_raknet_65a66565305db59b(RakNet::Rak
 }
 
 
-intgo _wrap_RakPeerInterface_Connect__SWIG_2_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, _gostring_ _swig_go_3, intgo _swig_go_4, RakNet::PublicKey *_swig_go_5, intgo _swig_go_6, intgo _swig_go_7) {
+intgo _wrap_RakPeerInterface_Connect__SWIG_2_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, _gostring_ _swig_go_3, intgo _swig_go_4, RakNet::PublicKey *_swig_go_5, intgo _swig_go_6, intgo _swig_go_7) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   char *arg2 = (char *) 0 ;
   unsigned short arg3 ;
@@ -3942,7 +3942,7 @@ intgo _wrap_RakPeerInterface_Connect__SWIG_2_raknet_65a66565305db59b(RakNet::Rak
 }
 
 
-intgo _wrap_RakPeerInterface_Connect__SWIG_3_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, _gostring_ _swig_go_3, intgo _swig_go_4, RakNet::PublicKey *_swig_go_5, intgo _swig_go_6) {
+intgo _wrap_RakPeerInterface_Connect__SWIG_3_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, _gostring_ _swig_go_3, intgo _swig_go_4, RakNet::PublicKey *_swig_go_5, intgo _swig_go_6) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   char *arg2 = (char *) 0 ;
   unsigned short arg3 ;
@@ -3967,7 +3967,7 @@ intgo _wrap_RakPeerInterface_Connect__SWIG_3_raknet_65a66565305db59b(RakNet::Rak
 }
 
 
-intgo _wrap_RakPeerInterface_Connect__SWIG_4_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, _gostring_ _swig_go_3, intgo _swig_go_4, RakNet::PublicKey *_swig_go_5) {
+intgo _wrap_RakPeerInterface_Connect__SWIG_4_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, _gostring_ _swig_go_3, intgo _swig_go_4, RakNet::PublicKey *_swig_go_5) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   char *arg2 = (char *) 0 ;
   unsigned short arg3 ;
@@ -3990,7 +3990,7 @@ intgo _wrap_RakPeerInterface_Connect__SWIG_4_raknet_65a66565305db59b(RakNet::Rak
 }
 
 
-intgo _wrap_RakPeerInterface_Connect__SWIG_5_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, _gostring_ _swig_go_3, intgo _swig_go_4) {
+intgo _wrap_RakPeerInterface_Connect__SWIG_5_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, short _swig_go_2, _gostring_ _swig_go_3, intgo _swig_go_4) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   char *arg2 = (char *) 0 ;
   unsigned short arg3 ;
@@ -4011,7 +4011,7 @@ intgo _wrap_RakPeerInterface_Connect__SWIG_5_raknet_65a66565305db59b(RakNet::Rak
 }
 
 
-uint32_t *_wrap_RakPeerInterface_Send__SWIG_0_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, intgo _swig_go_4, char _swig_go_5, RakNet::AddressOrGUID *_swig_go_6, bool _swig_go_7, uint32_t *_swig_go_8) {
+uint32_t *_wrap_RakPeerInterface_Send__SWIG_0_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, intgo _swig_go_4, char _swig_go_5, RakNet::AddressOrGUID *_swig_go_6, bool _swig_go_7, uint32_t *_swig_go_8) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   char *arg2 = (char *) 0 ;
   int arg3 ;
@@ -4054,7 +4054,7 @@ uint32_t *_wrap_RakPeerInterface_Send__SWIG_0_raknet_65a66565305db59b(RakNet::Ra
 }
 
 
-uint32_t *_wrap_RakPeerInterface_Send__SWIG_1_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, intgo _swig_go_4, char _swig_go_5, RakNet::AddressOrGUID *_swig_go_6, bool _swig_go_7) {
+uint32_t *_wrap_RakPeerInterface_Send__SWIG_1_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, _gostring_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, intgo _swig_go_4, char _swig_go_5, RakNet::AddressOrGUID *_swig_go_6, bool _swig_go_7) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   char *arg2 = (char *) 0 ;
   int arg3 ;
@@ -4088,7 +4088,7 @@ uint32_t *_wrap_RakPeerInterface_Send__SWIG_1_raknet_65a66565305db59b(RakNet::Ra
 }
 
 
-RakNet::Packet *_wrap_RakPeerInterface_Receive_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0) {
+RakNet::Packet *_wrap_RakPeerInterface_Receive_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   RakNet::Packet *result = 0 ;
   RakNet::Packet *_swig_go_result;
@@ -4101,7 +4101,7 @@ RakNet::Packet *_wrap_RakPeerInterface_Receive_raknet_65a66565305db59b(RakNet::R
 }
 
 
-void _wrap_RakPeerInterface_DeallocatePacket_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, RakNet::Packet *_swig_go_1) {
+void _wrap_RakPeerInterface_DeallocatePacket_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, RakNet::Packet *_swig_go_1) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   RakNet::Packet *arg2 = (RakNet::Packet *) 0 ;
   
@@ -4113,7 +4113,7 @@ void _wrap_RakPeerInterface_DeallocatePacket_raknet_65a66565305db59b(RakNet::Rak
 }
 
 
-void _wrap_RakPeerInterface_Shutdown__SWIG_0_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, intgo _swig_go_1, char _swig_go_2, intgo _swig_go_3) {
+void _wrap_RakPeerInterface_Shutdown__SWIG_0_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, intgo _swig_go_1, char _swig_go_2, intgo _swig_go_3) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   unsigned int arg2 ;
   unsigned char arg3 ;
@@ -4129,7 +4129,7 @@ void _wrap_RakPeerInterface_Shutdown__SWIG_0_raknet_65a66565305db59b(RakNet::Rak
 }
 
 
-void _wrap_RakPeerInterface_Shutdown__SWIG_1_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, intgo _swig_go_1, char _swig_go_2) {
+void _wrap_RakPeerInterface_Shutdown__SWIG_1_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, intgo _swig_go_1, char _swig_go_2) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   unsigned int arg2 ;
   unsigned char arg3 ;
@@ -4143,7 +4143,7 @@ void _wrap_RakPeerInterface_Shutdown__SWIG_1_raknet_65a66565305db59b(RakNet::Rak
 }
 
 
-void _wrap_RakPeerInterface_Shutdown__SWIG_2_raknet_65a66565305db59b(RakNet::RakPeerInterface *_swig_go_0, intgo _swig_go_1) {
+void _wrap_RakPeerInterface_Shutdown__SWIG_2_wrapper_e0979a90da1444b2(RakNet::RakPeerInterface *_swig_go_0, intgo _swig_go_1) {
   RakNet::RakPeerInterface *arg1 = (RakNet::RakPeerInterface *) 0 ;
   unsigned int arg2 ;
   

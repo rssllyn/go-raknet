@@ -11,7 +11,7 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/rssllyn/go-raknet"
+	"github.com/rssllyn/go-raknet/wrapper"
 )
 
 const (
@@ -27,11 +27,11 @@ func init() {
 }
 
 type Conn struct {
-	peer                raknet.RakPeerInterface
-	buff                []byte               // first packet data, buff it for reading multiple times
-	buffReadIdx         int                  // start index in buff that has not been read
-	chData              chan []byte          //
-	remoteAddressOrGUID raknet.AddressOrGUID // used to specify remote peer when Send
+	peer                wrapper.RakPeerInterface
+	buff                []byte                // first packet data, buff it for reading multiple times
+	buffReadIdx         int                   // start index in buff that has not been read
+	chData              chan []byte           //
+	remoteAddressOrGUID wrapper.AddressOrGUID // used to specify remote peer when Send
 	localAddress        net.Addr
 	remoteAddress       net.Addr
 
@@ -46,7 +46,7 @@ type Conn struct {
 func (c *Conn) monitor() {
 	for true {
 		packet := c.peer.Receive()
-		if unsafe.Pointer(packet.(raknet.SwigcptrPacket).Swigcptr()) == nil {
+		if unsafe.Pointer(packet.(wrapper.SwigcptrPacket).Swigcptr()) == nil {
 			// no packets received
 			time.Sleep(10 * time.Millisecond)
 			continue
@@ -56,20 +56,20 @@ func (c *Conn) monitor() {
 }
 
 // hanldling packet for client peer
-func (c *Conn) handlePacket(packet raknet.Packet) {
+func (c *Conn) handlePacket(packet wrapper.Packet) {
 	defer c.peer.DeallocatePacket(packet)
 
-	identifier := raknet.GetPacketIdentifier(packet)
+	identifier := wrapper.GetPacketIdentifier(packet)
 	Logger.Info("packet received", zap.Int("message identifier", int(identifier)))
-	switch raknet.DefaultMessageIDTypes(identifier) {
-	case raknet.ID_USER_PACKET_ENUM:
-		data := []byte(raknet.GetPacketPayload(packet))
+	switch wrapper.DefaultMessageIDTypes(identifier) {
+	case wrapper.ID_USER_PACKET_ENUM:
+		data := []byte(wrapper.GetPacketPayload(packet))
 		c.chData <- data
 		Logger.Debug("packet data", zap.String("hex", hex.EncodeToString(data)))
-	case raknet.ID_DISCONNECTION_NOTIFICATION:
+	case wrapper.ID_DISCONNECTION_NOTIFICATION:
 		Logger.Debug("connection lost")
 		close(c.done)
-	case raknet.ID_CONNECTION_LOST:
+	case wrapper.ID_CONNECTION_LOST:
 		Logger.Debug("connection lost")
 		close(c.done)
 	}
@@ -103,13 +103,13 @@ func (c *Conn) Write(b []byte) (int, error) {
 	}
 
 	var buff bytes.Buffer
-	buff.WriteByte(byte(raknet.ID_USER_PACKET_ENUM))
+	buff.WriteByte(byte(wrapper.ID_USER_PACKET_ENUM))
 	buff.Write(b)
 
-	// raknet requires the data sent (char* type in c++) to be ended with \0 character
+	// wrapper requires the data sent (char* type in c++) to be ended with \0 character
 	buff.WriteByte(0)
 
-	sent := c.peer.Send(string(buff.Bytes()), buff.Len(), raknet.HIGH_PRIORITY, raknet.RELIABLE_ORDERED, byte(0), c.remoteAddressOrGUID, false)
+	sent := c.peer.Send(string(buff.Bytes()), buff.Len(), wrapper.HIGH_PRIORITY, wrapper.RELIABLE_ORDERED, byte(0), c.remoteAddressOrGUID, false)
 	if int(sent.Swigcptr()) < buff.Len() {
 		return int(sent.Swigcptr()), errors.New("not all data sent")
 	}
@@ -145,20 +145,20 @@ func (c *Conn) SetWriteDeadline(t time.Time) error {
 	return nil
 }
 
-// waitForConnectionAccepted blocks until a ID_CONNECTION_REQUEST_ACCEPTED packet is received from raknet, and returns true
+// waitForConnectionAccepted blocks until a ID_CONNECTION_REQUEST_ACCEPTED packet is received from wrapper, and returns true
 // it returns false with an error if it determines that the connection could never be accepted
-func waitForConnectionAccepted(peer raknet.RakPeerInterface) (raknet.AddressOrGUID, error) {
+func waitForConnectionAccepted(peer wrapper.RakPeerInterface) (wrapper.AddressOrGUID, error) {
 	for true {
 		packet := peer.Receive()
-		if unsafe.Pointer(packet.(raknet.SwigcptrPacket).Swigcptr()) == nil {
+		if unsafe.Pointer(packet.(wrapper.SwigcptrPacket).Swigcptr()) == nil {
 			// no packets received
 			time.Sleep(10 * time.Millisecond)
 			continue
 		}
-		identifier := raknet.GetPacketIdentifier(packet)
-		switch raknet.DefaultMessageIDTypes(identifier) {
-		case raknet.ID_CONNECTION_REQUEST_ACCEPTED:
-			addressOrGUID := raknet.NewAddressOrGUID(packet)
+		identifier := wrapper.GetPacketIdentifier(packet)
+		switch wrapper.DefaultMessageIDTypes(identifier) {
+		case wrapper.ID_CONNECTION_REQUEST_ACCEPTED:
+			addressOrGUID := wrapper.NewAddressOrGUID(packet)
 			peer.DeallocatePacket(packet)
 			return addressOrGUID, nil
 		}
@@ -177,8 +177,8 @@ func Dial(raddr string) (net.Conn, error) {
 	}
 	Logger.Debug("connecting to server", zap.String("server address", remoteUDPAddr.String()))
 
-	peer := raknet.RakPeerInterfaceGetInstance()
-	socketDescriptor := raknet.NewSocketDescriptor(uint16(0), "")
+	peer := wrapper.RakPeerInterfaceGetInstance()
+	socketDescriptor := wrapper.NewSocketDescriptor(uint16(0), "")
 	Logger.Debug(
 		"local address before connect",
 		zap.String("host", socketDescriptor.GetHostAddress()),
@@ -213,7 +213,7 @@ func Dial(raddr string) (net.Conn, error) {
 }
 
 type Listener struct {
-	peer          raknet.RakPeerInterface
+	peer          wrapper.RakPeerInterface
 	sessions      map[uint16]*Conn
 	chAccepts     chan *Conn
 	listenAddress net.Addr
@@ -239,7 +239,7 @@ func (l *Listener) Addr() net.Addr {
 func (l *Listener) monitor() {
 	for true {
 		packet := l.peer.Receive()
-		if unsafe.Pointer(packet.(raknet.SwigcptrPacket).Swigcptr()) == nil {
+		if unsafe.Pointer(packet.(wrapper.SwigcptrPacket).Swigcptr()) == nil {
 			// no packets received
 			time.Sleep(10 * time.Millisecond)
 			continue
@@ -248,13 +248,13 @@ func (l *Listener) monitor() {
 	}
 }
 
-func (l *Listener) handlePacket(packet raknet.Packet) {
+func (l *Listener) handlePacket(packet wrapper.Packet) {
 	defer l.peer.DeallocatePacket(packet)
 
-	identifier := raknet.GetPacketIdentifier(packet)
+	identifier := wrapper.GetPacketIdentifier(packet)
 	Logger.Info("packet received", zap.Int("message identifier", int(identifier)))
-	switch raknet.DefaultMessageIDTypes(identifier) {
-	case raknet.ID_NEW_INCOMING_CONNECTION:
+	switch wrapper.DefaultMessageIDTypes(identifier) {
+	case wrapper.ID_NEW_INCOMING_CONNECTION:
 		if len(l.chAccepts) >= cap(l.chAccepts) {
 			// prevent packet receiving of existing sessions being blocked
 			return
@@ -268,34 +268,34 @@ func (l *Listener) handlePacket(packet raknet.Packet) {
 		sess := &Conn{
 			chData:              make(chan []byte, ConnPacketBuffer),
 			peer:                l.peer,
-			remoteAddressOrGUID: raknet.NewAddressOrGUID(packet),
+			remoteAddressOrGUID: wrapper.NewAddressOrGUID(packet),
 			isClient:            false,
 			done:                make(chan struct{}),
 			localAddress:        l.listenAddress,
 			remoteAddress:       remoteAddress,
 		}
 
-		// get unique ID for this session, notice that when raknet detects connection lost,
+		// get unique ID for this session, notice that when wrapper detects connection lost,
 		// corresponding session ID would be reused in latter incomming connections
 		sessionID := packet.GetGuid().GetSystemIndex()
 
 		l.sessions[sessionID] = sess
 		l.chAccepts <- sess
 		Logger.Debug("new incoming connection received", zap.Uint16("session ID", sessionID))
-	case raknet.ID_USER_PACKET_ENUM:
-		data := []byte(raknet.GetPacketPayload(packet))
+	case wrapper.ID_USER_PACKET_ENUM:
+		data := []byte(wrapper.GetPacketPayload(packet))
 		sessionID := packet.GetGuid().GetSystemIndex()
 		if sess, ok := l.sessions[sessionID]; ok {
 			sess.chData <- data
 			Logger.Debug("packet received for session", zap.Uint16("session ID", sessionID))
 		}
-	case raknet.ID_DISCONNECTION_NOTIFICATION:
+	case wrapper.ID_DISCONNECTION_NOTIFICATION:
 		Logger.Debug("connection lost")
 		sessionID := packet.GetGuid().GetSystemIndex()
 		if sess, ok := l.sessions[sessionID]; ok {
 			close(sess.done)
 		}
-	case raknet.ID_CONNECTION_LOST:
+	case wrapper.ID_CONNECTION_LOST:
 		Logger.Debug("connection lost")
 		sessionID := packet.GetGuid().GetSystemIndex()
 		if sess, ok := l.sessions[sessionID]; ok {
@@ -314,8 +314,8 @@ func Listen(laddr string, maxConnections int) (net.Listener, error) {
 		ip = udpAddr.IP.String()
 	}
 
-	peer := raknet.RakPeerInterfaceGetInstance()
-	socketDescriptor := raknet.NewSocketDescriptor(uint16(udpAddr.Port), ip)
+	peer := wrapper.RakPeerInterfaceGetInstance()
+	socketDescriptor := wrapper.NewSocketDescriptor(uint16(udpAddr.Port), ip)
 	var socketDescriptorCount uint = 1
 	peer.Startup(uint(maxConnections), socketDescriptor, socketDescriptorCount)
 
