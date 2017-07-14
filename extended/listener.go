@@ -11,8 +11,7 @@ import (
 
 	"go.uber.org/zap"
 
-	"changit.cn/warrior_server/go-raknet"
-	. "changit.cn/warrior_server/sercom/logger"
+	"github.com/rssllyn/go-raknet"
 )
 
 const (
@@ -20,6 +19,12 @@ const (
 	acceptBacklog          = 128 // number of connections to keep and wait for accept
 	shutDownNotifyDuration = 100 // milliseconds
 )
+
+var Logger *zap.Logger
+
+func init() {
+	Logger, _ = zap.NewDevelopment()
+}
 
 type Conn struct {
 	peer                raknet.RakPeerInterface

@@ -10,9 +10,14 @@ import (
 	"go.uber.org/zap"
 	cli "gopkg.in/urfave/cli.v2"
 
-	"changit.cn/warrior_server/go-raknet/extended"
-	. "changit.cn/warrior_server/sercom/logger"
+	"github.com/rssllyn/go-raknet/extended"
 )
+
+var Logger *zap.Logger
+
+func init() {
+	Logger, _ = zap.NewDevelopment()
+}
 
 func main() {
 	app := &cli.App{
@@ -35,8 +40,6 @@ func main() {
 			},
 		},
 		Action: func(ctx *cli.Context) error {
-			LoggerInit(ctx)
-
 			conn, err := extended.Dial(ctx.String("server-address"))
 			if err != nil {
 				Logger.Fatal("failed to connect to server")
