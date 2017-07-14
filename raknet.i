@@ -41,6 +41,7 @@ namespace RakNet
 
 typedef unsigned short SystemIndex;
 struct Packet;
+struct SystemAddress;
 
 enum StartupResult
 {
@@ -80,14 +81,16 @@ struct SocketDescriptor
 	unsigned int extraSocketOptions;
 };
 
-struct AddressOrGUID
-{
-	AddressOrGUID( Packet *packet );
-};
-
 struct RakNetGUID
 {
 	SystemIndex systemIndex;
+};
+
+struct AddressOrGUID
+{
+	AddressOrGUID( Packet *packet );
+	RakNetGUID rakNetGuid;
+	SystemAddress systemAddress;
 };
 
 struct SystemAddress

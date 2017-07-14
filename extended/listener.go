@@ -23,10 +23,12 @@ const (
 
 type Conn struct {
 	peer                raknet.RakPeerInterface
-	buff                []byte // first packet data, buff it for reading multiple times
-	buffReadIdx         int    // start index in buff that has not been read
-	chData              chan []byte
-	remoteAddressOrGUID raknet.AddressOrGUID
+	buff                []byte               // first packet data, buff it for reading multiple times
+	buffReadIdx         int                  // start index in buff that has not been read
+	chData              chan []byte          //
+	remoteAddressOrGUID raknet.AddressOrGUID // used to specify remote peer when Send
+	localAddress        net.Addr
+	remoteAddress       net.Addr
 
 	// indicates whether the connection is opened as a client peer
 	// the RakPeerInterface will only be ShutDown for client connection, which is expected to connect to only one server
@@ -119,11 +121,11 @@ func (c *Conn) Close() error {
 }
 
 func (c *Conn) LocalAddr() net.Addr {
-	return nil
+	return c.localAddress
 }
 
 func (c *Conn) RemoteAddr() net.Addr {
-	return nil
+	return c.remoteAddress
 }
 
 func (c *Conn) SetDeadline(t time.Time) error {
@@ -161,42 +163,55 @@ func waitForConnectionAccepted(peer raknet.RakPeerInterface) (raknet.AddressOrGU
 }
 
 func Dial(raddr string) (net.Conn, error) {
-	udpAddr, err := net.ResolveUDPAddr("udp", raddr)
+	remoteUDPAddr, err := net.ResolveUDPAddr("udp", raddr)
 	if err != nil {
 		return nil, err
 	}
-	var ip string
-	if udpAddr.IP != nil {
-		ip = udpAddr.IP.String()
+	if remoteUDPAddr.IP == nil {
+		return nil, errors.New("no server ip address specified")
 	}
+	Logger.Debug("connecting to server", zap.String("server address", remoteUDPAddr.String()))
 
 	peer := raknet.RakPeerInterfaceGetInstance()
 	socketDescriptor := raknet.NewSocketDescriptor(uint16(0), "")
+	Logger.Debug(
+		"local address before connect",
+		zap.String("host", socketDescriptor.GetHostAddress()),
+		zap.Uint16("port", socketDescriptor.GetPort()),
+	)
 	var maxConnectionCount uint = 1
 	var socketDescriptorCount uint = 1
 	peer.Startup(maxConnectionCount, socketDescriptor, socketDescriptorCount)
 	var password string
 	var passwordLength int
-	peer.Connect(ip, uint16(udpAddr.Port), password, passwordLength)
+	peer.Connect(remoteUDPAddr.IP.String(), uint16(remoteUDPAddr.Port), password, passwordLength)
 	addressOrGUID, err := waitForConnectionAccepted(peer)
 	if err != nil {
 		return nil, err
 	}
+	Logger.Debug(
+		"local address after connected",
+		zap.String("host", socketDescriptor.GetHostAddress()),
+		zap.Uint16("port", socketDescriptor.GetPort()),
+	)
+
 	conn := &Conn{
 		chData:              make(chan []byte, ConnPacketBuffer),
 		peer:                peer,
 		remoteAddressOrGUID: addressOrGUID,
 		isClient:            true,
 		done:                make(chan struct{}),
+		remoteAddress:       remoteUDPAddr,
 	}
 	go conn.monitor()
 	return conn, nil
 }
 
 type Listener struct {
-	peer      raknet.RakPeerInterface
-	sessions  map[uint16]*Conn
-	chAccepts chan *Conn
+	peer          raknet.RakPeerInterface
+	sessions      map[uint16]*Conn
+	chAccepts     chan *Conn
+	listenAddress net.Addr
 }
 
 func (l *Listener) Accept() (net.Conn, error) {
@@ -207,11 +222,12 @@ func (l *Listener) Accept() (net.Conn, error) {
 }
 
 func (l *Listener) Close() error {
+	l.peer.Shutdown(uint(shutDownNotifyDuration))
 	return nil
 }
 
 func (l *Listener) Addr() net.Addr {
-	return nil
+	return l.listenAddress
 }
 
 // monitor receiving packets from the connection, and create sessions if neccessary
@@ -238,12 +254,20 @@ func (l *Listener) handlePacket(packet raknet.Packet) {
 			// prevent packet receiving of existing sessions being blocked
 			return
 		}
+		ra := packet.GetSystemAddress().ToString(true, []byte(":")[0]).(string)
+		Logger.Debug("remote address", zap.String("ip:port", ra))
+		remoteAddress, err := net.ResolveUDPAddr("udp", ra)
+		if err != nil {
+			Logger.Warn("failed to get remote address", zap.Error(err))
+		}
 		sess := &Conn{
 			chData:              make(chan []byte, ConnPacketBuffer),
 			peer:                l.peer,
 			remoteAddressOrGUID: raknet.NewAddressOrGUID(packet),
 			isClient:            false,
 			done:                make(chan struct{}),
+			localAddress:        l.listenAddress,
+			remoteAddress:       remoteAddress,
 		}
 
 		// get unique ID for this session, notice that when raknet detects connection lost,
@@ -293,9 +317,10 @@ func Listen(laddr string, maxConnections int) (net.Listener, error) {
 	peer.SetMaximumIncomingConnections(uint16(maxConnections))
 
 	l := &Listener{
-		peer:      peer,
-		sessions:  make(map[uint16]*Conn),
-		chAccepts: make(chan *Conn, acceptBacklog),
+		peer:          peer,
+		sessions:      make(map[uint16]*Conn),
+		chAccepts:     make(chan *Conn, acceptBacklog),
+		listenAddress: udpAddr,
 	}
 
 	go l.monitor()
