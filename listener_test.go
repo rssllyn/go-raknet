@@ -1,4 +1,4 @@
-package extended
+package raknet
 
 import (
 	"io"

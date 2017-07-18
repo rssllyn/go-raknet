@@ -9,7 +9,7 @@ import (
 	"go.uber.org/zap"
 	cli "gopkg.in/urfave/cli.v2"
 
-	"github.com/rssllyn/go-raknet/extended"
+	"github.com/rssllyn/go-raknet"
 )
 
 var Logger *zap.Logger
@@ -39,7 +39,7 @@ func main() {
 			},
 		},
 		Action: func(ctx *cli.Context) error {
-			l, err := extended.Listen(ctx.String("listen"), 1000)
+			l, err := raknet.Listen(ctx.String("listen"), 1000)
 			if err != nil {
 				Logger.Warn("failed to listen server address")
 			}

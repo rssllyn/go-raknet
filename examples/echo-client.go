@@ -10,7 +10,7 @@ import (
 	"go.uber.org/zap"
 	cli "gopkg.in/urfave/cli.v2"
 
-	"github.com/rssllyn/go-raknet/extended"
+	"github.com/rssllyn/go-raknet"
 )
 
 var Logger *zap.Logger
@@ -40,7 +40,7 @@ func main() {
 			},
 		},
 		Action: func(ctx *cli.Context) error {
-			conn, err := extended.Dial(ctx.String("server-address"))
+			conn, err := raknet.Dial(ctx.String("server-address"))
 			if err != nil {
 				Logger.Fatal("failed to connect to server")
 			}
